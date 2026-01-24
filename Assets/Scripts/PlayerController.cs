@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
         //only reads 2d vector
         moveInput = context.ReadValue<Vector2>();
         //Logs input in console
-        Debug.Log($"Move Input: {moveInput}");
+        //Debug.Log($"Move Input: {moveInput}");
     }
 
     // Update is called once per frame.
