@@ -63,6 +63,16 @@ public class EnemyAI : MonoBehaviour
         Debug.Log("Can see " + detectable.gameObject.name);
     }
 
+    public void CanHear(Vector3 location, HeardSoundType soundType, float loudness)
+    {
+        Debug.Log("Heard sound of type " + soundType + " at location " + location + " with loudness " + loudness);
+    }
+
+    public void CanDetectProximity(Detectable detectable)
+    {
+        Debug.Log("In proximity of " + detectable.gameObject.name);
+    }
+
 }
 
 

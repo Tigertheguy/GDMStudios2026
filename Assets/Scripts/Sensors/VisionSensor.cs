@@ -62,7 +62,11 @@ public class VisionSensor : MonoBehaviour
             if(Physics.Raycast(currAI.EyeLocation, vectorToTarget.normalized, out hitInfo, 
                                 currAI.VisionConeRange, DetectionMask, QueryTriggerInteraction.Collide))
             {
-                currAI.CanSee(target);
+                if(hitInfo.collider.gameObject == target.gameObject)
+                {
+                    currAI.CanSee(target);
+                }
+                
             }
 
         }

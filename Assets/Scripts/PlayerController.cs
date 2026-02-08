@@ -4,9 +4,15 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     //Can edit in unity but remains private
+    [Header("Player Settings")]
     [SerializeField] private float playerSpd = 3f;
     [SerializeField] private float player_Y_Offset = 1f;
     [SerializeField] private float gravity = -9.8f;
+
+    [Header("Sound Settings")]
+    [SerializeField] private float stepInterval = 0.5f;
+    [SerializeField] private float walkLoudness = 10f;
+    private float stepTimer;
 
     public LayerMask terrainLayer;
     //public Rigidbody rb;
@@ -38,6 +44,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
         controller.Move(move * playerSpd * Time.deltaTime);
+        HandleSoundEmission();
         oldRaycast();
         //moveInput.y += gravity * Time.deltaTime; //Causes sliding 
 
@@ -74,6 +81,31 @@ public class PlayerController : MonoBehaviour
         else if (x > 0)
         {
             sr.flipX = true;
+        }
+    }
+    void HandleSoundEmission()
+    {
+        //If moving fast
+        if (controller.velocity.magnitude > 0.1f)
+        {
+            stepTimer -= Time.deltaTime;
+
+            if (stepTimer <= 0)
+            {
+                //Notify HearingManager
+                if (HearingManager.Instance != null)
+                {
+                    //Depends on sound type and intensity which should be based on distance
+                    HearingManager.Instance.OnSoundEmitted(transform.position, HeardSoundType.FloorWalk, walkLoudness);
+                }
+                //Reset timer
+                stepTimer = stepInterval;
+            }
+        }
+        else
+        {
+            //Stopped so set to 0 to play sound immediatley on move
+            stepTimer = 0;
         }
     }
 }
