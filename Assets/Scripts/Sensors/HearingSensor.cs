@@ -28,12 +28,12 @@ public class HearingSensor : MonoBehaviour
         }
     }
 
-    public void OnHearSound(Vector3 location, HeardSoundType soundType, float loudness)
+    public void OnHearSound(GameObject source, Vector3 location, HeardSoundType soundType, float loudness)
     {
         //In range
         if (Vector3.Distance(transform.position, location) <= GetComponent<EnemyAI>().HearingRange)
         {
-            GetComponent<EnemyAI>().CanHear(location, soundType, loudness);
+            GetComponent<EnemyAI>().CanHear(source, location, soundType, loudness);
         }//Out of range
         else
         {
