@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     [Header("Player Settings")]
     [SerializeField] private float playerSpd = 3f;
     [SerializeField] private float player_Y_Offset = 1f;
-    [SerializeField] private float gravity = -9.8f;
+    //[SerializeField] private float gravity = -9.8f;
 
     [Header("Sound Settings")]
     [SerializeField] private float stepInterval = 0.5f;
@@ -96,7 +96,7 @@ public class PlayerController : MonoBehaviour
                 if (HearingManager.Instance != null)
                 {
                     //Depends on sound type and intensity which should be based on distance
-                    HearingManager.Instance.OnSoundEmitted(transform.position, HeardSoundType.FloorWalk, walkLoudness);
+                    HearingManager.Instance.OnSoundEmitted(gameObject, transform.position, HeardSoundType.FloorWalk, walkLoudness);
                 }
                 //Reset timer
                 stepTimer = stepInterval;

@@ -55,12 +55,12 @@ public class HearingManager : MonoBehaviour
 
     
     //For any sound emitted
-    public void OnSoundEmitted(Vector3 location, HeardSoundType soundType, float loudness)
+    public void OnSoundEmitted(GameObject source, Vector3 location, HeardSoundType soundType, float loudness)
     {
         //Notify all sensors of the sound
         foreach(var sensor in AllSensors)
         {
-            sensor.OnHearSound(location, soundType, loudness);
+            sensor.OnHearSound(source, location, soundType, loudness);
         }
     }
 }
