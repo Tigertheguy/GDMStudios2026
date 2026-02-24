@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public LayerMask terrainLayer;
     //public Rigidbody rb;
     public SpriteRenderer sr;
+    public Animator animator;
 
     private CharacterController controller;
     private Vector3 moveInput;
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         //rb = gameObject.GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
     }
 
@@ -44,6 +46,10 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
         controller.Move(move * playerSpd * Time.deltaTime);
+        animator.SetFloat("MoveX", moveInput.x);
+        animator.SetFloat("MoveY", moveInput.y);
+        animator.SetFloat("Speed", moveInput.magnitude);
+        
         HandleSoundEmission();
         oldRaycast();
         //moveInput.y += gravity * Time.deltaTime; //Causes sliding 
@@ -74,14 +80,7 @@ public class PlayerController : MonoBehaviour
         //Vector3 playerDir = new Vector3(x, 0, z); //only want x and z axis. Maybe add jump later
         //rb.Velocity = playerDir * playerSpd;
 
-        if (x < 0)
-        {
-            sr.flipX = false; // flips sprite when walking in other direction
-        }
-        else if (x > 0)
-        {
-            sr.flipX = true;
-        }
+
     }
     void HandleSoundEmission()
     {
