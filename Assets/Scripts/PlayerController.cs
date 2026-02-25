@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     [Header("Sound Settings")]
     [SerializeField] private float stepInterval = 0.5f;
     [SerializeField] private float walkLoudness = 10f;
+
+    [SerializeField] private AK.Wwise.Event startWalkEvent;
+    [SerializeField] private AK.Wwise.Event stopWalkEvent;
     private float stepTimer;
 
     public LayerMask terrainLayer;
@@ -33,6 +36,11 @@ public class PlayerController : MonoBehaviour
     {
         //only reads 2d vector
         moveInput = context.ReadValue<Vector2>();
+        if(context.started){
+            startWalkEvent.Post(gameObject);
+        } else if(context.canceled){
+            stopWalkEvent.Post(gameObject);
+        }
         //Logs input in console
         //Debug.Log($"Move Input: {moveInput}");
     }

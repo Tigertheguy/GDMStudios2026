@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3CB257EB-96AC-4E53-9EC5-E450E97C3BFD}" SchemaVersion="123">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{3CB257EB-96AC-4E53-9EC5-E450E97C3BFD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main_Soundbank" ID="{18E4ABCB-0880-4292-A583-08E6C011CADC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_EnemyGrowl3" ID="{E75BE466-D192-4058-9451-B34283F6DE99}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyGrowl1" ID="{3C234B95-5F7C-40BE-85B6-C8C618CF753F}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyGrowl4" ID="{325FD835-2A27-43DD-BDDF-F7F3C038285B}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyWalk" ID="{68B6F269-C5AA-4652-AFE0-3C90826DF037}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Heartbeat" ID="{51D6652D-F779-499C-887E-72647B31A364}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="EnemyWalkRandom" ID="{EDCBB277-CFC1-49DF-A501-E45D934879B5}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Activate" ID="{12D97D81-28C0-4A61-945B-4822D065D632}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DamageTaken" ID="{5A4F06EB-EE6B-4CAF-946D-D3DD4EC0C31A}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerWalk" ID="{9FB11C91-BDDD-4E4B-B544-76188E1EB751}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerWalkRandom" ID="{B015A33C-1F6C-4EAD-86D0-88CF8EE5E69D}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyGrowl2" ID="{CBD7C92E-7A2C-4ED2-9476-F43923E62C88}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music_Soundbank" ID="{A330D800-91EB-4674-991F-A98A5FD4AA10}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MusicSanity1LOOP" ID="{4A003F25-9A93-4B1A-93A9-56059DE92CCA}" WorkUnitID="{41651D97-9634-4072-AE4A-C1379E769C11}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

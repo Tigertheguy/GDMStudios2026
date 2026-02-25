@@ -27,6 +27,10 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float _ProximityDetectionRange = 3f;
     [SerializeField] private Color _ProximityRangeColour = new Color(1f, 1f, 1f, 0.25f);
 
+    [SerializeField] private AK.Wwise.Event _startEnemyWalkRandomEvent;
+    [SerializeField] private AK.Wwise.Event _stopEnemyWalkRandomEvent;
+
+    [SerializeField] private AK.Wwise.Event _startEnemyGrowl1;
     //Getters
     public float VisionConeRange { get { return _VisionConeRange; } }
     public float VisionConeAngle { get { return _VisionConeAngle; } }
@@ -53,6 +57,8 @@ public class EnemyAI : MonoBehaviour
     private AIStates currState = AIStates.Idle;
     private GameObject currTarget;
     private Vector3 lastKnownLocation;
+    private bool isWalking;
+    private bool willGrowl;
 
     [Header("Movement Settings")]
     [SerializeField] private float chaseSpeed = 6.0f;
@@ -69,11 +75,12 @@ public class EnemyAI : MonoBehaviour
         navAgent.acceleration = acceleration;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-
+        isWalking = false;
+        willGrowl = true;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -83,18 +90,49 @@ public class EnemyAI : MonoBehaviour
             lastKnownLocation = currTarget.transform.position;
             navAgent.SetDestination(lastKnownLocation);
         }
-        if (currState == AIStates.Searching)
+        else if (currState == AIStates.Searching)
         {
             navAgent.SetDestination(lastKnownLocation);
         }
-        if (currState == AIStates.Startled)
+        else if (currState == AIStates.Startled)
         {
             navAgent.SetDestination(lastKnownLocation);
+            // Startled sound in the future
         }
-        if (currState == AIStates.Idle)
+        else if (currState == AIStates.Idle)
         {
             navAgent.ResetPath();
         }
+    }
+
+    private void PlayGrowlSound()
+    {
+        if(!willGrowl)
+        {
+            return;
+        }
+        _startEnemyGrowl1.Post(gameObject);
+        willGrowl = false;
+    }
+
+    private void PlayWalkSound()
+    {
+        if(isWalking)
+        {
+            return;
+        }
+        _startEnemyWalkRandomEvent.Post(gameObject);
+        isWalking = true;
+    }
+
+    private void StopWalkSound()
+    {
+        if(!isWalking)
+        {
+            return;
+        }
+        _stopEnemyWalkRandomEvent.Post(gameObject);
+        isWalking = false;
     }
 
     public void CanSee(Detectable detectable)
@@ -120,6 +158,8 @@ public class EnemyAI : MonoBehaviour
         currState = AIStates.Startled;
         navAgent.speed = startledSpeed;
         currTarget = null;
+        PlayGrowlSound();
+        isWalking = false;
     }
 
     public void gainDetection(GameObject target)
@@ -128,11 +168,13 @@ public class EnemyAI : MonoBehaviour
         navAgent.speed = searchSpeed;
         currTarget = target;
         lastKnownLocation = target.transform.position;
+        isWalking = false;
     }
 
     public void gainFull(GameObject target)
     {
         currState = AIStates.Chasing;
+        PlayWalkSound();
         navAgent.speed = chaseSpeed;
         currTarget = target;
         lastKnownLocation = target.transform.position;
@@ -150,6 +192,8 @@ public class EnemyAI : MonoBehaviour
         currState = AIStates.Startled;
         navAgent.speed = startledSpeed;
         currTarget = null;
+        willGrowl = true;
+        StopWalkSound();
     }
 
     public void loseFull()
@@ -157,6 +201,8 @@ public class EnemyAI : MonoBehaviour
         currState = AIStates.Idle;
         navAgent.speed = idleSpeed;
         currTarget = null;
+        willGrowl = true;
+        StopWalkSound();
     }
 
 }

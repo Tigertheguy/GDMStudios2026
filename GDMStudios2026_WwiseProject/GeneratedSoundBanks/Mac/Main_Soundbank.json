@@ -1,0 +1,277 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "2228651116",
+    "Type": "User",
+    "GUID": "{18E4ABCB-0880-4292-A583-08E6C011CADC}",
+    "Language": "SFX",
+    "Hash": "{FFA0B2DF-071E-279C-F88D-EE127059344F}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main_Soundbank",
+    "ShortName": "Main_Soundbank",
+    "Path": "Main_Soundbank.bnk",
+    "Media": [
+     {
+      "Id": "120433409",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyWalk.wav",
+      "CachePath": "21/{21365F4C-B9F2-5D26-D39F-CF190928BF57}.wem"
+     },
+     {
+      "Id": "155935737",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyGrowl1.wav",
+      "CachePath": "A5/{A5830382-599B-59BC-7E0B-89950BEB2F57}.wem"
+     },
+     {
+      "Id": "188146421",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heartbeat.wav",
+      "CachePath": "85/{85545F4A-E8BB-5990-6962-B44EEBCD4210}.wem"
+     },
+     {
+      "Id": "438782125",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Activate.wav",
+      "CachePath": "87/{87D22FB9-0CAD-0812-4A0E-E5C96A5BBAFB}.wem"
+     },
+     {
+      "Id": "769779975",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "DamageTaken.wav",
+      "CachePath": "82/{824491A6-B24E-8195-A484-55152656F678}.wem"
+     },
+     {
+      "Id": "832754357",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyGrowl4.wav",
+      "CachePath": "94/{94301AAE-13E6-45E2-DA80-5E6C9E9B5D47}.wem"
+     },
+     {
+      "Id": "878601726",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyGrowl3.wav",
+      "CachePath": "0A/{0AEE907E-9D0D-7138-61D7-86549F081841}.wem"
+     },
+     {
+      "Id": "892983716",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "EnemyGrowl2.wav",
+      "CachePath": "36/{3626F529-E674-1B52-59E3-AE3A8DAAE259}.wem"
+     },
+     {
+      "Id": "990169513",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "PlayerWalk.wav",
+      "CachePath": "66/{66626273-DF9A-1EBC-B5F2-E4C64BE56979}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "956849933",
+      "Name": "Play_Activate",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Activate",
+      "GUID": "{12D97D81-28C0-4A61-945B-4822D065D632}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.25",
+      "DurationMax": "0.25",
+      "MediaRefs": [
+       {
+        "Id": "438782125"
+       }
+      ]
+     },
+     {
+      "Id": "1423098094",
+      "Name": "Play_DamageTaken",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_DamageTaken",
+      "GUID": "{5A4F06EB-EE6B-4CAF-946D-D3DD4EC0C31A}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.6458333",
+      "DurationMax": "2.6458333",
+      "MediaRefs": [
+       {
+        "Id": "769779975"
+       }
+      ]
+     },
+     {
+      "Id": "2679964538",
+      "Name": "Play_EnemyGrowl1",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_EnemyGrowl1",
+      "GUID": "{3C234B95-5F7C-40BE-85B6-C8C618CF753F}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.75",
+      "DurationMax": "4.75",
+      "MediaRefs": [
+       {
+        "Id": "155935737"
+       }
+      ]
+     },
+     {
+      "Id": "2679964537",
+      "Name": "Play_EnemyGrowl2",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_EnemyGrowl2",
+      "GUID": "{CBD7C92E-7A2C-4ED2-9476-F43923E62C88}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.1041665",
+      "DurationMax": "4.1041665",
+      "MediaRefs": [
+       {
+        "Id": "892983716"
+       }
+      ]
+     },
+     {
+      "Id": "2679964536",
+      "Name": "Play_EnemyGrowl3",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_EnemyGrowl3",
+      "GUID": "{E75BE466-D192-4058-9451-B34283F6DE99}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.5833335",
+      "DurationMax": "5.5833335",
+      "MediaRefs": [
+       {
+        "Id": "878601726"
+       }
+      ]
+     },
+     {
+      "Id": "2679964543",
+      "Name": "Play_EnemyGrowl4",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_EnemyGrowl4",
+      "GUID": "{325FD835-2A27-43DD-BDDF-F7F3C038285B}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.625",
+      "DurationMax": "2.625",
+      "MediaRefs": [
+       {
+        "Id": "832754357"
+       }
+      ]
+     },
+     {
+      "Id": "2634161841",
+      "Name": "Play_EnemyWalk",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_EnemyWalk",
+      "GUID": "{68B6F269-C5AA-4652-AFE0-3C90826DF037}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.375",
+      "DurationMax": "1.375",
+      "MediaRefs": [
+       {
+        "Id": "120433409"
+       }
+      ]
+     },
+     {
+      "Id": "16748364",
+      "Name": "Play_EnemyWalkRandom",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_EnemyWalkRandom",
+      "GUID": "{4886CA5E-1854-40AC-9E33-EAB8D81AC18E}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "120433409"
+       }
+      ]
+     },
+     {
+      "Id": "3765695918",
+      "Name": "Play_Heartbeat",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Heartbeat",
+      "GUID": "{51D6652D-F779-499C-887E-72647B31A364}",
+      "DurationType": "OneShot",
+      "DurationMin": "5.2916665",
+      "DurationMax": "5.2916665",
+      "MediaRefs": [
+       {
+        "Id": "188146421"
+       }
+      ]
+     },
+     {
+      "Id": "2093119550",
+      "Name": "Play_PlayerWalk",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerWalk",
+      "GUID": "{9FB11C91-BDDD-4E4B-B544-76188E1EB751}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.4556935",
+      "DurationMax": "0.46098846",
+      "MediaRefs": [
+       {
+        "Id": "990169513"
+       }
+      ]
+     },
+     {
+      "Id": "2127420471",
+      "Name": "Play_PlayerWalkRandom",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_PlayerWalkRandom",
+      "GUID": "{33982E40-5869-43D9-97A6-6EAE19E95202}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "990169513"
+       }
+      ]
+     },
+     {
+      "Id": "950378054",
+      "Name": "Stop_EnemyWalkRandom",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_EnemyWalkRandom",
+      "GUID": "{187326A3-22AA-43AA-B64C-C9C63DC9299B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "120433409"
+       }
+      ]
+     },
+     {
+      "Id": "109684357",
+      "Name": "Stop_PlayerWalkRandom",
+      "ObjectPath": "\\Events\\Default Work Unit\\Stop_PlayerWalkRandom",
+      "GUID": "{ECF2AFB7-B9A9-4C63-9AF9-7EDBAF2773F1}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "990169513"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BF6EBF4F-67AB-C082-B334-60C4F1B83182}"
+ }
+}

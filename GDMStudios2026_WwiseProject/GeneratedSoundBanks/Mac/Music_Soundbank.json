@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3589812408",
+    "Type": "User",
+    "GUID": "{A330D800-91EB-4674-991F-A98A5FD4AA10}",
+    "Language": "SFX",
+    "Hash": "{05A9715E-1A97-2D65-1BC7-51AB397EA5CF}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music_Soundbank",
+    "ShortName": "Music_Soundbank",
+    "Path": "Music_Soundbank.bnk",
+    "Media": [
+     {
+      "Id": "694139509",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MusicSanity1.wav",
+      "CachePath": "CF/{CFBAE895-0867-B984-3147-AD6BD15F6738}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3478577940",
+      "Name": "Play_MusicSanity1LOOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MusicSanity1LOOP",
+      "GUID": "{25167022-5956-4865-9E38-BBEB859F282D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "694139509"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4FC5F947-90F3-4ECF-B910-6033B9363F21}"
+ }
+}

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Activate" ID="{12D97D81-28C0-4A61-945B-4822D065D632}">
+					<ChildrenList>
+						<Action Name="" ID="{E39E09A1-0A80-4129-8FA7-97139BE28F05}" ShortID="645109243">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Activate" ID="{F7A42FB8-C72D-4941-9347-1322AB1DFB76}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_DamageTaken" ID="{5A4F06EB-EE6B-4CAF-946D-D3DD4EC0C31A}">
+					<ChildrenList>
+						<Action Name="" ID="{F529E754-9E6B-495F-95E6-00499C228617}" ShortID="856352861">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DamageTaken" ID="{A05AAEE0-DF0F-4381-89D2-858BF24DC1DD}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyGrowl1" ID="{3C234B95-5F7C-40BE-85B6-C8C618CF753F}">
+					<ChildrenList>
+						<Action Name="" ID="{074149DE-E68E-47CD-B4A9-01CD13068564}" ShortID="710968800">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyGrowl1" ID="{22343A89-AB96-412B-BF00-16E8FB0D072D}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyGrowl2" ID="{CBD7C92E-7A2C-4ED2-9476-F43923E62C88}">
+					<ChildrenList>
+						<Action Name="" ID="{4A3BB293-0E59-4985-B69A-46910681DE5F}" ShortID="552827927">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyGrowl2" ID="{7C0B113F-43FB-4AAE-8B2E-1F3A33006EDA}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyGrowl3" ID="{E75BE466-D192-4058-9451-B34283F6DE99}">
+					<ChildrenList>
+						<Action Name="" ID="{C9820C1E-1B59-4AF5-B960-5121CBA2DFC7}" ShortID="860462374">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyGrowl3" ID="{3C5836F0-CE24-4CFA-A59E-22F5C351E97D}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyGrowl4" ID="{325FD835-2A27-43DD-BDDF-F7F3C038285B}">
+					<ChildrenList>
+						<Action Name="" ID="{DB8A4FF4-59CD-4D9D-B859-D9074224D8DB}" ShortID="563295753">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyGrowl4" ID="{CE5EA07E-8430-4AA4-B7A0-1D2AFA2D5274}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyWalk" ID="{68B6F269-C5AA-4652-AFE0-3C90826DF037}">
+					<ChildrenList>
+						<Action Name="" ID="{BCE29ABA-D5FE-4115-B450-4355AA94AF14}" ShortID="607699619">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyWalk" ID="{B37F3915-60A2-4CE0-A78E-A43534460AE9}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Heartbeat" ID="{51D6652D-F779-499C-887E-72647B31A364}">
+					<ChildrenList>
+						<Action Name="" ID="{9D784C5C-754A-4CF7-BC62-C0C2D0F4EAF5}" ShortID="890389412">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heartbeat" ID="{B3B187D1-CA89-405A-A3DE-6F9E23AE43BD}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerWalk" ID="{9FB11C91-BDDD-4E4B-B544-76188E1EB751}">
+					<ChildrenList>
+						<Action Name="" ID="{8EA966B1-F442-44E8-9288-D9392B399316}" ShortID="316826890">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerWalk" ID="{753196B3-D1BB-4980-BCBA-D22350111455}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PlayerWalkRandom" ID="{33982E40-5869-43D9-97A6-6EAE19E95202}">
+					<ChildrenList>
+						<Action Name="" ID="{FCB26284-84E0-483F-9A5F-337ECAFA9934}" ShortID="88298852">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerWalkRandom" ID="{B015A33C-1F6C-4EAD-86D0-88CF8EE5E69D}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_PlayerWalkRandom" ID="{ECF2AFB7-B9A9-4C63-9AF9-7EDBAF2773F1}">
+					<ChildrenList>
+						<Action Name="" ID="{F9A0D501-F82E-4B22-8F2D-076D93EA7BF2}" ShortID="455247142">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PlayerWalkRandom" ID="{B015A33C-1F6C-4EAD-86D0-88CF8EE5E69D}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MusicSanity1LOOP" ID="{25167022-5956-4865-9E38-BBEB859F282D}">
+					<ChildrenList>
+						<Action Name="" ID="{7B181FD2-C4D3-40E1-A01B-C2311D682D5D}" ShortID="802836781">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSanity1LOOP" ID="{4A003F25-9A93-4B1A-93A9-56059DE92CCA}" WorkUnitID="{41651D97-9634-4072-AE4A-C1379E769C11}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyWalkRandom" ID="{4886CA5E-1854-40AC-9E33-EAB8D81AC18E}">
+					<ChildrenList>
+						<Action Name="" ID="{285535E0-3BCA-42EB-867D-157B9EBB4F01}" ShortID="457165440">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyWalkRandom" ID="{EDCBB277-CFC1-49DF-A501-E45D934879B5}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_EnemyWalkRandom" ID="{187326A3-22AA-43AA-B64C-C9C63DC9299B}">
+					<ChildrenList>
+						<Action Name="" ID="{9D8D3017-8F8F-48A2-8384-7F57788FA1D6}" ShortID="334622258">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyWalkRandom" ID="{EDCBB277-CFC1-49DF-A501-E45D934879B5}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}" SchemaVersion="123">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Activate" ID="{F7A42FB8-C72D-4941-9347-1322AB1DFB76}" ShortID="924667648">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Activate" ID="{E109B0EB-0D48-4783-A23B-4D61F8690D76}">
+							<Language>SFX</Language>
+							<AudioFile>Activate.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="438782125"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Activate" ID="{E109B0EB-0D48-4783-A23B-4D61F8690D76}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="DamageTaken" ID="{A05AAEE0-DF0F-4381-89D2-858BF24DC1DD}" ShortID="373188081">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="DamageTaken" ID="{F18B3EA0-DA01-447B-A94F-BCB0C5D7A0A3}">
+							<PropertyList>
+								<Property Name="LoopBegin" Type="Real64" Value="0"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>DamageTaken.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="769779975"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="DamageTaken" ID="{F18B3EA0-DA01-447B-A94F-BCB0C5D7A0A3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemyGrowl1" ID="{22343A89-AB96-412B-BF00-16E8FB0D072D}" ShortID="851803607">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EnemyGrowl1" ID="{CE1AFA47-CBA5-4022-81EA-ED39CD86CABB}">
+							<Language>SFX</Language>
+							<AudioFile>EnemyGrowl1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="155935737"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EnemyGrowl1" ID="{CE1AFA47-CBA5-4022-81EA-ED39CD86CABB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemyGrowl2" ID="{7C0B113F-43FB-4AAE-8B2E-1F3A33006EDA}" ShortID="627356386">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EnemyGrowl2" ID="{8CAAFFEC-0775-4D50-A54A-26AC04FD0948}">
+							<Language>SFX</Language>
+							<AudioFile>EnemyGrowl2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="892983716"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EnemyGrowl2" ID="{8CAAFFEC-0775-4D50-A54A-26AC04FD0948}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemyGrowl3" ID="{3C5836F0-CE24-4CFA-A59E-22F5C351E97D}" ShortID="991366489">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EnemyGrowl3" ID="{AD8154BA-39B7-4409-9B96-BF8EB455DD4B}">
+							<Language>SFX</Language>
+							<AudioFile>EnemyGrowl3.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="878601726"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EnemyGrowl3" ID="{AD8154BA-39B7-4409-9B96-BF8EB455DD4B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemyGrowl4" ID="{CE5EA07E-8430-4AA4-B7A0-1D2AFA2D5274}" ShortID="286061599">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EnemyGrowl4" ID="{5477BF9B-E055-4212-923C-803368B0DC50}">
+							<Language>SFX</Language>
+							<AudioFile>EnemyGrowl4.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="832754357"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EnemyGrowl4" ID="{5477BF9B-E055-4212-923C-803368B0DC50}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Heartbeat" ID="{B3B187D1-CA89-405A-A3DE-6F9E23AE43BD}" ShortID="926236709">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Heartbeat" ID="{4FF926EC-237C-4275-8857-784FBF68E445}">
+							<Language>SFX</Language>
+							<AudioFile>Heartbeat.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="188146421"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Heartbeat" ID="{4FF926EC-237C-4275-8857-784FBF68E445}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="PlayerWalkRandom" ID="{B015A33C-1F6C-4EAD-86D0-88CF8EE5E69D}" ShortID="978680843">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{B892FE92-EF83-4A6E-BBFF-F0A920E11E15}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2DC24918-84E8-4F42-99DC-A6E7066A64D9}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="50"/>
+											<Property Name="Min" Type="Real64" Value="-50"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{538CBE38-2050-49F5-B060-95F49FEDC104}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{064AB6BF-8F9A-47F6-8463-F62D8C36EE44}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="5"/>
+											<Property Name="Min" Type="Real64" Value="-5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="PlayerWalk" ID="{753196B3-D1BB-4980-BCBA-D22350111455}" ShortID="653971551">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B53D4450-8507-41BA-83E1-FC63435D62AF}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="425"/>
+													<Property Name="Min" Type="Real64" Value="-675"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{2CD6CA29-D2B3-4654-A826-90924976A757}">
+												<PropertyList>
+													<Property Name="Max" Type="Real64" Value="7"/>
+													<Property Name="Min" Type="Real64" Value="-7"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PlayerWalk" ID="{983F11E6-7D0B-435D-BB21-E4CC2622576C}">
+									<PropertyList>
+										<Property Name="LoopEnd" Type="Real64" Value="0.301574372280951"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>PlayerWalk.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="990169513"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PlayerWalk" ID="{983F11E6-7D0B-435D-BB21-E4CC2622576C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="EnemyWalkRandom" ID="{EDCBB277-CFC1-49DF-A501-E45D934879B5}" ShortID="602590117">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{BE291A15-49DB-4FDB-AD17-323598180E49}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="20"/>
+											<Property Name="Min" Type="Real64" Value="-20"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7047E508-F46C-4C0F-9C13-D3F24BBC4847}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="10"/>
+											<Property Name="Min" Type="Real64" Value="-10"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{D4B588B5-F344-4894-A9A0-40919C074859}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4FBF453B-16E0-486D-8F00-416BBC1A3056}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="5"/>
+											<Property Name="Min" Type="Real64" Value="-5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="EnemyWalk" ID="{B37F3915-60A2-4CE0-A78E-A43534460AE9}" ShortID="212152133">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="EnemyWalk" ID="{E0BE1460-8224-44C7-A92A-91E9FCB06973}">
+									<Language>SFX</Language>
+									<AudioFile>EnemyWalk.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="120433409"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="EnemyWalk" ID="{E0BE1460-8224-44C7-A92A-91E9FCB06973}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
