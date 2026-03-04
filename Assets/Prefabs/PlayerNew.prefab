@@ -248,11 +248,11 @@ MonoBehaviour:
   startWalkEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f39f5106a045f4da9bf6614005fa80f5, type: 2}
   stopWalkEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: f3b491e9c609b451dafb9aa4f8ebccd0, type: 2}
   terrainLayer:
     serializedVersion: 2
     m_Bits: 128
