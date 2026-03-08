@@ -44,7 +44,7 @@ public class PlayerSanity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Current Sanity: " + _currentSanity);
+        //Debug.Log("Current Sanity: " + _currentSanity);
         //After a delay and no enemies around gain a little sanity back
         if(Time.time > _lastNearEnemy + _sanityRecoverBuffer)
         {

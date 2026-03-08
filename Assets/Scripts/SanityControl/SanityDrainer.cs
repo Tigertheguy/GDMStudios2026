@@ -22,7 +22,7 @@ public class SanityDrainer : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Player in zone");
+        //Debug.Log("Player in zone");
         if (other.CompareTag("Player"))
         {
             
