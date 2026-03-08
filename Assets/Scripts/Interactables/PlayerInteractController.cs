@@ -1,15 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerInteractController : MonoBehaviour
 {
-   [SerializeField] public float radius = 2f;
-   [SerializeField] public LayerMask interactableLayer;
+    public float radius = 2f;
+    public LayerMask interactableLayer;
+    public TextMeshProUGUI promptText;
 
-    //When E is pressed basically
-    public void OnInteract(InputValue value) 
+    public void OnInteractTriggered(InputAction.CallbackContext context) 
     {
-        if (value.isPressed) 
+        if (context.performed) 
         {
             CheckForItems();
         }
@@ -27,5 +28,27 @@ public class PlayerInteractController : MonoBehaviour
                 break; //We only interact with one item
             }
         }
+    }
+
+    void Update()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, radius, interactableLayer);
+
+        if (colliders.Length > 0)
+        {
+            if (colliders[0].TryGetComponent(out Interactable interactable))
+            {
+                promptText.text = "E";
+                return;
+            }
+        }
+        
+        promptText.text = "";
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }
