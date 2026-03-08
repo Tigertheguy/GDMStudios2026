@@ -38,6 +38,7 @@ public class Movable : Interactable
         transform.SetParent(holdPosition);
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity; 
+        Physics.SyncTransforms();
     }
 
     private void Drop()

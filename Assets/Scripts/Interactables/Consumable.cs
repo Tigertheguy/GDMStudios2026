@@ -11,4 +11,9 @@ public class Consumable : Interactable
         OnConsume.Invoke(); // Use methods in Unity Events
         Destroy(gameObject); //Bye bye object
     }
+
+    public void TestFunction()
+    {
+        print("Consumed");
+    }
 }
