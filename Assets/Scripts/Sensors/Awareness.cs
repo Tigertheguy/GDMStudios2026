@@ -99,7 +99,7 @@ public class Awareness : MonoBehaviour
         List<GameObject> toCleanUp = new List<GameObject>();
         foreach (var targetGameObject in targets.Keys)
         {
-            Debug.Log("Threshold change for " + targetGameObject.name + " " + targets[targetGameObject].awareness);
+            //Debug.Log("Threshold change for " + targetGameObject.name + " " + targets[targetGameObject].awareness);
             //If detection = 0 remove
             if (targets[targetGameObject].DecayAwareness(DecayDelay, DecayRate * Time.deltaTime))
             {

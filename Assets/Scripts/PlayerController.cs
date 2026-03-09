@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AK.Wwise.Event stopWalkEvent;
     private float stepTimer;
 
+    [SerializeField] private PlayerSanity playerSanity;
+
     public LayerMask terrainLayer;
     //public Rigidbody rb;
     public SpriteRenderer sr;
@@ -52,6 +54,14 @@ public class PlayerController : MonoBehaviour
     // I think update is fine for our purposes
     void Update()
     {
+
+        if(playerSanity.IsMeditating)
+        {
+            //Meditation animations?
+            stepTimer = 0;
+            return;
+        }
+
         Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
         controller.Move(move * playerSpd * Time.deltaTime);
         animator.SetFloat("MoveX", moveInput.x);
