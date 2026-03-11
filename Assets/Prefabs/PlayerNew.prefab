@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 4031448109687739448}
   - component: {fileID: 7345634395719605538}
   - component: {fileID: 4987246532168053894}
+  - component: {fileID: 7973841839815911286}
+  - component: {fileID: 4640610933095212930}
   m_Layer: 8
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,6 +116,55 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &7973841839815911286
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625662624241034448}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!114 &4640610933095212930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625662624241034448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07943dbc4318d994588d96b8824dcefb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSanity
+  _meditateAction: {fileID: 0}
+  _maxSanity: 200
+  _currentSanity: 200
+  _sanityIncreaseRate: 1
+  _sanityRecoverBuffer: 3
+  _meditationRegenRate: 5
+  _meditationCap: 3
+  _meditationDurationMax: 5
+  _rampThreshold: 1
+  _rampingStrength: 0.5
 --- !u!1 &4036299008611158716
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,7 +216,7 @@ GameObject:
   - component: {fileID: 5175999225379900317}
   m_Layer: 8
   m_Name: PlayerNew
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -206,7 +257,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 2.06
   m_Center: {x: 0.11, y: 0.97, z: 0}
@@ -233,10 +284,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 116
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!143 &2219288723494890878
 CharacterController:
   m_ObjectHideFlags: 0
@@ -286,6 +337,7 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f3b491e9c609b451dafb9aa4f8ebccd0, type: 2}
+  playerSanity: {fileID: 4640610933095212930}
   terrainLayer:
     serializedVersion: 2
     m_Bits: 128
@@ -365,6 +417,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 34827e11-5ae9-4a80-82af-1414fcb4744e
     m_ActionName: 'Gameplay/Interact[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 822c40b1-5980-4b90-8c7e-bafbb55fdfee
+    m_ActionName: 'Gameplay/Meditate[/Keyboard/q]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay
