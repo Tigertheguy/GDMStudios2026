@@ -3,264 +3,6 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{41651D97-9634-4072-AE4A-C1379E769C11}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSegment Name="MusicSanity2" ID="{86D13D08-BA78-469D-8247-931C3E612458}" ShortID="703259802">
-					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="52000"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<MusicTrack Name="MusicSanity2" ID="{D66B18D4-2586-4036-8AD1-EC7CC9ACC688}" ShortID="595036374">
-							<ReferenceList>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
-								</Reference>
-								<Reference Name="TransitionRoot">
-									<Custom>
-										<MusicTransition Name="Root" ID="{FC7DE3DF-0CAE-4603-BFB5-7233B7E89D4E}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MusicSanity2" ID="{F79D097B-90E5-4913-803E-D380856BF930}">
-									<Language>SFX</Language>
-									<AudioFile>MusicSanity2.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="359482999"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Sequences">
-									<Reference>
-										<Local>
-											<MusicTrackSequence Name="" ID="{0FC8A23A-EF68-42E7-B964-5443B6AA285C}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<Reference>
-															<Local>
-																<MusicClip Name="MusicSanity2" ID="{E7F516A4-3B41-43BC-8582-C8EA3DD95272}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="52000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="MusicSanity2" ID="{F79D097B-90E5-4913-803E-D380856BF930}"/>
-																</MusicClip>
-															</Local>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicTrack>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="Cues">
-							<Reference>
-								<Local>
-									<MusicCue Name="Entry Cue" ID="{6FE8720B-CD73-4712-A271-2913D800D88C}"/>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MusicCue Name="Exit Cue" ID="{D7F39110-AA25-4AE9-9A9D-650D765DD00F}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="52000"/>
-										</PropertyList>
-									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-				</MusicSegment>
-				<MusicSegment Name="MusicSanity3" ID="{4A08D13D-CBB8-48B3-909C-B2EE96064C5F}" ShortID="512996377">
-					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="52000"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<MusicTrack Name="MusicSanity3" ID="{06B68D7C-E730-40BF-BEE1-014BF2A466E5}" ShortID="315705151">
-							<ReferenceList>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
-								</Reference>
-								<Reference Name="TransitionRoot">
-									<Custom>
-										<MusicTransition Name="Root" ID="{D7BDDE98-BB2D-47AA-8825-45A186E274D8}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MusicSanity3" ID="{1D033182-C90A-46CC-9284-6E3B39690E1C}">
-									<Language>SFX</Language>
-									<AudioFile>MusicSanity3.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="458661342"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Sequences">
-									<Reference>
-										<Local>
-											<MusicTrackSequence Name="" ID="{75F0F459-6E20-40C4-89BB-CEBC9CE56698}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<Reference>
-															<Local>
-																<MusicClip Name="MusicSanity3" ID="{3C9577FE-01CB-4320-AD94-EC86DCF90215}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="52000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="MusicSanity3" ID="{1D033182-C90A-46CC-9284-6E3B39690E1C}"/>
-																</MusicClip>
-															</Local>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicTrack>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="Cues">
-							<Reference>
-								<Local>
-									<MusicCue Name="Entry Cue" ID="{209A20B1-2D45-4832-ABAF-388A1EEA39AE}"/>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MusicCue Name="Exit Cue" ID="{B3FBB13C-7257-4162-BBD9-D210BBE2045B}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="52000"/>
-										</PropertyList>
-									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-				</MusicSegment>
-				<MusicSegment Name="MusicSanity4" ID="{E3017040-288B-4CBD-A679-28EA86D8588A}" ShortID="741763999">
-					<PropertyList>
-						<Property Name="EndPosition" Type="Real64" Value="52000"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<MusicTrack Name="MusicSanity4" ID="{6F7D8B1F-0B67-4ABE-A966-40FD13AEE8FB}" ShortID="623731173">
-							<ReferenceList>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
-								</Reference>
-								<Reference Name="TransitionRoot">
-									<Custom>
-										<MusicTransition Name="Root" ID="{41CF78BB-BFE1-420A-B9CB-C6723E996A13}">
-											<PropertyList>
-												<Property Name="IsFolder" Type="bool" Value="True"/>
-											</PropertyList>
-											<TransitionInfo/>
-										</MusicTransition>
-									</Custom>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="MusicSanity4" ID="{00548BE0-8474-4F00-BE5D-D3620961BFC0}">
-									<Language>SFX</Language>
-									<AudioFile>MusicSanity4.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="100107031"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="Sequences">
-									<Reference>
-										<Local>
-											<MusicTrackSequence Name="" ID="{7202696A-C436-42D5-8028-3B5980FAD5FD}">
-												<ObjectLists>
-													<ObjectList Name="Clips">
-														<Reference>
-															<Local>
-																<MusicClip Name="MusicSanity4" ID="{45961CB1-E448-40D0-B88D-5667CB5F6DA0}">
-																	<PropertyList>
-																		<Property Name="EndTrimOffset" Type="Real64" Value="52000"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																	</PropertyList>
-																	<AudioSourceRef Name="MusicSanity4" ID="{00548BE0-8474-4F00-BE5D-D3620961BFC0}"/>
-																</MusicClip>
-															</Local>
-														</Reference>
-													</ObjectList>
-												</ObjectLists>
-											</MusicTrackSequence>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</MusicTrack>
-					</ChildrenList>
-					<ObjectLists>
-						<ObjectList Name="Cues">
-							<Reference>
-								<Local>
-									<MusicCue Name="Entry Cue" ID="{420BC949-4428-43A3-B4AB-E6F1C45F37D0}"/>
-								</Local>
-							</Reference>
-							<Reference>
-								<Local>
-									<MusicCue Name="Exit Cue" ID="{78EA3CA4-FBD3-42A9-BD7C-9EA7FF935FBB}">
-										<PropertyList>
-											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="52000"/>
-										</PropertyList>
-									</MusicCue>
-								</Local>
-							</Reference>
-						</ObjectList>
-					</ObjectLists>
-				</MusicSegment>
 				<MusicPlaylistContainer Name="MusicSanity1LOOP" ID="{4A003F25-9A93-4B1A-93A9-56059DE92CCA}" ShortID="221197980">
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -315,7 +57,7 @@
 					<ChildrenList>
 						<MusicSegment Name="MusicSanity1" ID="{4D46D2C4-FB31-4025-AF9C-A7F5AEA23D8B}" ShortID="699411141">
 							<PropertyList>
-								<Property Name="EndPosition" Type="Real64" Value="52000"/>
+								<Property Name="EndPosition" Type="Real64" Value="56280.0606473595"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>5</Value>
@@ -332,9 +74,25 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="MusicSanity1" ID="{B5963F42-EE6F-4B50-9ED8-929AABCD0075}" ShortID="833581885">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CE50A1CD-C2A0-43E0-8A8C-7CA1AA00E4C9}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="MusicTrackType" Type="int16" Value="3"/>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Sanity_100" ID="{550F3169-2C67-4AC7-ADE1-1DF723EF8500}" WorkUnitID="{D76C3DE5-6106-49E7-9E2C-BDDD9B54B4DA}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Sanity_Switch_Group" ID="{39880F3E-9DC7-4BE4-8250-A99BFD302FA3}" WorkUnitID="{D76C3DE5-6106-49E7-9E2C-BDDD9B54B4DA}"/>
 										</Reference>
 										<Reference Name="TransitionRoot">
 											<Custom>
@@ -342,6 +100,34 @@
 													<PropertyList>
 														<Property Name="IsFolder" Type="bool" Value="True"/>
 													</PropertyList>
+													<ChildrenList>
+														<MusicTransition Name="Transition" ID="{923C006D-C518-455F-ADFD-D4CD3CA06EB9}">
+															<PropertyList>
+																<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+																<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+																<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+															</PropertyList>
+															<TransitionInfo>
+																<SourceFadeOut>
+																	<MusicFade Name="Source Fade-out" ID="{9350254A-C082-497D-A4DD-25553239C322}">
+																		<PropertyList>
+																			<Property Name="FadeOffset" Type="Real64" Value="0.5"/>
+																			<Property Name="FadeTime" Type="Real64" Value="2"/>
+																			<Property Name="FadeType" Type="int16" Value="1"/>
+																		</PropertyList>
+																	</MusicFade>
+																</SourceFadeOut>
+																<DestinationFadeIn>
+																	<MusicFade Name="Destination Fade-in" ID="{19586970-1021-4A44-8253-183D9410CF8F}">
+																		<PropertyList>
+																			<Property Name="FadeOffset" Type="Real64" Value="-0.5"/>
+																			<Property Name="FadeTime" Type="Real64" Value="1"/>
+																		</PropertyList>
+																	</MusicFade>
+																</DestinationFadeIn>
+															</TransitionInfo>
+														</MusicTransition>
+													</ChildrenList>
 													<TransitionInfo/>
 												</MusicTransition>
 											</Custom>
@@ -353,6 +139,27 @@
 											<AudioFile>MusicSanity1.wav</AudioFile>
 											<MediaIDList>
 												<MediaID ID="694139509"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="MusicSanity2" ID="{F79D097B-90E5-4913-803E-D380856BF930}">
+											<Language>SFX</Language>
+											<AudioFile>MusicSanity2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="359482999"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="MusicSanity3" ID="{1D033182-C90A-46CC-9284-6E3B39690E1C}">
+											<Language>SFX</Language>
+											<AudioFile>MusicSanity3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="458661342"/>
+											</MediaIDList>
+										</AudioFileSource>
+										<AudioFileSource Name="MusicSanity4" ID="{00548BE0-8474-4F00-BE5D-D3620961BFC0}">
+											<Language>SFX</Language>
+											<AudioFile>MusicSanity4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="100107031"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
@@ -377,6 +184,92 @@
 																</Reference>
 															</ObjectList>
 														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="Sanity_100" ID="{550F3169-2C67-4AC7-ADE1-1DF723EF8500}" WorkUnitID="{D76C3DE5-6106-49E7-9E2C-BDDD9B54B4DA}"/>
+															</Reference>
+														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D0395F6A-2A43-46F3-B8A7-E8C309C85E9A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="MusicSanity2" ID="{E7F516A4-3B41-43BC-8582-C8EA3DD95272}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="52000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="MusicSanity2" ID="{F79D097B-90E5-4913-803E-D380856BF930}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="Sanity_75" ID="{9AAC2765-DB0A-4B44-9B29-B42036AAA746}" WorkUnitID="{D76C3DE5-6106-49E7-9E2C-BDDD9B54B4DA}"/>
+															</Reference>
+														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{D9508B0A-D8C1-491C-9EDE-D35E4F2EBD96}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="MusicSanity3" ID="{3C9577FE-01CB-4320-AD94-EC86DCF90215}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="52000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="MusicSanity3" ID="{1D033182-C90A-46CC-9284-6E3B39690E1C}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="Sanity_50" ID="{158503A5-705B-48DD-B5EE-82D1AD70FF7B}" WorkUnitID="{D76C3DE5-6106-49E7-9E2C-BDDD9B54B4DA}"/>
+															</Reference>
+														</ReferenceList>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F444718F-04CB-43FA-8847-00B9B111A33A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="MusicSanity4" ID="{45961CB1-E448-40D0-B88D-5667CB5F6DA0}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="52000"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="MusicSanity4" ID="{00548BE0-8474-4F00-BE5D-D3620961BFC0}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+														<ReferenceList>
+															<Reference Name="TrackSequenceSwitch">
+																<ObjectRef Name="Sanity_25" ID="{52CB0675-1D70-4C85-9C39-DC5407240475}" WorkUnitID="{D76C3DE5-6106-49E7-9E2C-BDDD9B54B4DA}"/>
+															</Reference>
+														</ReferenceList>
 													</MusicTrackSequence>
 												</Local>
 											</Reference>
@@ -396,7 +289,7 @@
 											<MusicCue Name="Exit Cue" ID="{319F3484-5175-4157-AD39-154B39927CAC}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="52000"/>
+													<Property Name="TimeMs" Type="Real64" Value="50135.0382036488"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>
