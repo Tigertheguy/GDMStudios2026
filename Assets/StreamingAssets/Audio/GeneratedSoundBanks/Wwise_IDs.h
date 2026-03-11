@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID LOW_PASS_OFF = 367131765U;
+        static const AkUniqueID LOW_PASS_ON = 3512511369U;
         static const AkUniqueID PLAY_ACTIVATE = 956849933U;
         static const AkUniqueID PLAY_DAMAGETAKEN = 1423098094U;
         static const AkUniqueID PLAY_ENEMYGROWL1 = 2679964538U;
@@ -28,6 +30,23 @@ namespace AK
         static const AkUniqueID STOP_ENEMYWALKRANDOM = 950378054U;
         static const AkUniqueID STOP_PLAYERWALKRANDOM = 109684357U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace SANITY_SWITCH_GROUP
+        {
+            static const AkUniqueID GROUP = 1555263990U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID SANITY_25 = 1969796993U;
+                static const AkUniqueID SANITY_50 = 1953019409U;
+                static const AkUniqueID SANITY_75 = 1919464142U;
+                static const AkUniqueID SANITY_100 = 3923805783U;
+            } // namespace SWITCH
+        } // namespace SANITY_SWITCH_GROUP
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

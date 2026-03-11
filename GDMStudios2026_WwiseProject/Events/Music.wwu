@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E0A027C9-6F75-445D-B00C-029D68C72C36}" SchemaVersion="123">
+	<Events>
+		<WorkUnit Name="Music" ID="{E0A027C9-6F75-445D-B00C-029D68C72C36}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Low_Pass_On" ID="{8411629B-8D05-4745-B927-FCDB938AB751}">
+					<ChildrenList>
+						<Action Name="" ID="{D21D3FAE-7097-40EF-81E2-8B96787DDDFF}" ShortID="309479715">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="26"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Lowpass" Type="int16" Value="69"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSanity1" ID="{B5963F42-EE6F-4B50-9ED8-929AABCD0075}" WorkUnitID="{41651D97-9634-4072-AE4A-C1379E769C11}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Low_Pass_Off" ID="{B8D0AA1C-CF70-4FCD-912B-8111AD8BEDC1}">
+					<ChildrenList>
+						<Action Name="" ID="{39CAA852-B1F4-4372-9151-90D43B4BE667}" ShortID="155193975">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="27"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSanity1" ID="{B5963F42-EE6F-4B50-9ED8-929AABCD0075}" WorkUnitID="{41651D97-9634-4072-AE4A-C1379E769C11}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
