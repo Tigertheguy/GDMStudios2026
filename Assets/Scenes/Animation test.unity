@@ -3950,6 +3950,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1151415096 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3570875241753814464, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+  m_PrefabInstance: {fileID: 1321755988410901095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961c682c5887e4fb781a3de0dd85b3e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MusicSwitch
 --- !u!1 &1177955104
 GameObject:
   m_ObjectHideFlags: 0
@@ -7561,6 +7572,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1572964120352816704, guid: 1680a706c80aed24fa1d23896e85f079, type: 3}
+      propertyPath: _musicSwitch
+      value: 
+      objectReference: {fileID: 1151415096}
+    - target: {fileID: 1572964120352816704, guid: 1680a706c80aed24fa1d23896e85f079, type: 3}
       propertyPath: _playerSanity
       value: 
       objectReference: {fileID: 1409876908}
@@ -7945,9 +7960,49 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3570875241753814464, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: _playerSanity
+      value: 
+      objectReference: {fileID: 1409876908}
+    - target: {fileID: 3570875241753814464, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: SaneSwitch.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dc51d44585ac443e5a96747c49fd0714, type: 2}
+    - target: {fileID: 3570875241753814464, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: InsaneSwitch.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: d9d302101f0074d6592d3a48ee8b72d8, type: 2}
+    - target: {fileID: 3570875241753814464, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: ShakenSwitch.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 83247254e3a914f28b956d990f3416cc, type: 2}
+    - target: {fileID: 3570875241753814464, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: LowPassOnEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b826571e7e8f47a682b768a4eaedf7d, type: 2}
+    - target: {fileID: 3570875241753814464, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: DisturbedSwitch.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: eca824e5bb52348348268875e44813f8, type: 2}
+    - target: {fileID: 3570875241753814464, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: LowPassOffEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a36f421824f284416a624874d96d5b2b, type: 2}
     - target: {fileID: 5266503381177534556, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
       propertyPath: m_Name
       value: MusicPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372703229455317904, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: triggerList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372703229455317904, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: 'triggerList.Array.data[0]'
+      value: 1281810935
+      objectReference: {fileID: 0}
+    - target: {fileID: 8372703229455317904, guid: 3d062dc98d3984ff7943111c1346edf3, type: 3}
+      propertyPath: LargeModePositions.Array.size
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -9,6 +9,7 @@ public class SanityUI : MonoBehaviour
     [Header("References")]
     [SerializeField] private Slider _slider;
     [SerializeField] private PlayerSanity _playerSanity;
+    [SerializeField] private MusicSwitch _musicSwitch;
 
     [SerializeField] private Color _barFullColor = Color.white;
     [SerializeField] private Color _barLowColor = Color.red;
@@ -29,6 +30,9 @@ public class SanityUI : MonoBehaviour
     [SerializeField] private float _fadeSpeed = 2f;
     [SerializeField] private Image _meditationOverlay;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    
+
     void Start()
     {
         _slider.maxValue = _playerSanity.MaxSanity;
@@ -109,6 +113,7 @@ public class SanityUI : MonoBehaviour
             Color c = _meditationOverlay.color;
             c.a = newAlpha;
             _meditationOverlay.color = c;
+            _musicSwitch.StartLowPass();
         }
         else
         {
@@ -118,6 +123,7 @@ public class SanityUI : MonoBehaviour
             Color c = _meditationOverlay.color;
             c.a = newAlpha;
             _meditationOverlay.color = c;
+            _musicSwitch.ResetLowPass();
         }
     }
 }

@@ -41,9 +41,43 @@
       "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1555263990",
+      "Name": "Sanity_Switch_Group",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group",
+      "GUID": "{39880F3E-9DC7-4BE4-8250-A99BFD302FA3}",
+      "Switches": [
+       {
+        "Id": "1919464142",
+        "Name": "Sanity_75",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group\\Sanity_75",
+        "GUID": "{9AAC2765-DB0A-4B44-9B29-B42036AAA746}"
+       },
+       {
+        "Id": "1953019409",
+        "Name": "Sanity_50",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group\\Sanity_50",
+        "GUID": "{158503A5-705B-48DD-B5EE-82D1AD70FF7B}"
+       },
+       {
+        "Id": "1969796993",
+        "Name": "Sanity_25",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group\\Sanity_25",
+        "GUID": "{52CB0675-1D70-4C85-9C39-DC5407240475}"
+       },
+       {
+        "Id": "3923805783",
+        "Name": "Sanity_100",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group\\Sanity_100",
+        "GUID": "{550F3169-2C67-4AC7-ADE1-1DF723EF8500}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{DC8FFF93-1EAE-50E3-B262-4C4AA74E63AE}"
+  "FileHash": "{C897EE2F-C6D1-D637-ABFC-135375999B50}"
  }
 }
