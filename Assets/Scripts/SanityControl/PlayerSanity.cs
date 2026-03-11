@@ -128,6 +128,26 @@ public class PlayerSanity : MonoBehaviour
         _meditationCap = count;
     }
 
+    public int GetState()
+    {
+        if(_currentSanity > _maxSanity * 0.75f)
+        {
+            return 0; //Sane
+        }
+        else if(_currentSanity > _maxSanity * 0.5f)
+        {
+            return 1; //Shaken
+        }
+        else if(_currentSanity > _maxSanity * 0.25f)
+        {
+            return 2; //Disturbed
+        }
+        else
+        {
+            return 3; //Insane
+        }
+    }
+
     public float MaxSanity => _maxSanity;
     public int CurrentMeditationCount => _currentMeditationCount;
     public int MeditationCap => _meditationCap;
