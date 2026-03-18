@@ -17,20 +17,20 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] TextMeshProUGUI FeedbackDisplay;
 
     [Header("Detection Settings")]
-    [SerializeField] private float _VisionConeAngle = 60f;
-    [SerializeField] private float _VisionConeRange = 30f;
-    [SerializeField] private Color _VisionConeColour = new Color(1f, 0f, 0f, 0.25f);
+    [SerializeField] public float _VisionConeAngle = 60f;
+    [SerializeField] public float _VisionConeRange = 30f;
+    [SerializeField] public Color _VisionConeColour = new Color(1f, 0f, 0f, 0.25f);
 
-    [SerializeField] private float _HearingRange = 20f;
-    [SerializeField] private Color _HearingRangeColour = new Color(1f, 1f, 0f, 0.25f);
+    [SerializeField] public float _HearingRange = 20f;
+    [SerializeField] public Color _HearingRangeColour = new Color(1f, 1f, 0f, 0.25f);
 
-    [SerializeField] private float _ProximityDetectionRange = 3f;
-    [SerializeField] private Color _ProximityRangeColour = new Color(1f, 1f, 1f, 0.25f);
+    [SerializeField] public float _ProximityDetectionRange = 3f;
+    [SerializeField] public Color _ProximityRangeColour = new Color(1f, 1f, 1f, 0.25f);
 
-    [SerializeField] private AK.Wwise.Event _startEnemyWalkRandomEvent;
-    [SerializeField] private AK.Wwise.Event _stopEnemyWalkRandomEvent;
+    [SerializeField] public AK.Wwise.Event _startEnemyWalkRandomEvent;
+    [SerializeField] public AK.Wwise.Event _stopEnemyWalkRandomEvent;
 
-    [SerializeField] private AK.Wwise.Event _startEnemyGrowl1;
+    [SerializeField] public AK.Wwise.Event _startEnemyGrowl1;
     //Getters
     public float VisionConeRange { get { return _VisionConeRange; } }
     public float VisionConeAngle { get { return _VisionConeAngle; } }
@@ -51,21 +51,22 @@ public class EnemyAI : MonoBehaviour
 
     Awareness awareness;
 
-    UnityEngine.AI.NavMeshAgent navAgent;
+    public UnityEngine.AI.NavMeshAgent navAgent;
 
-    public enum AIStates { Idle, Startled, Searching, Chasing }
-    private AIStates currState = AIStates.Idle;
-    private GameObject currTarget;
-    private Vector3 lastKnownLocation;
-    private bool isWalking;
-    private bool willGrowl;
+    public enum AIStates { Idle, Roaming, Scanning, Listening, Feeling, Waiting, Ambushing, Charging, Startled, Searching, Chasing }
+    public AIStates currState = AIStates.Idle;
+    public GameObject currTarget;
+    public Vector3 lastKnownLocation;
+    public bool isWalking;
+    public bool willGrowl;
 
     [Header("Movement Settings")]
-    [SerializeField] private float chaseSpeed = 6.0f;
-    [SerializeField] private float searchSpeed = 2.5f;
-    [SerializeField] private float startledSpeed = 1f;
-    [SerializeField] private float idleSpeed = 0.5f;
-    [SerializeField] private float acceleration = 8.0f;
+    [SerializeField] public float chaseSpeed = 8.0f;
+    [SerializeField] public float roamSpeed = 6.5f;
+    [SerializeField] public float searchSpeed = 4f;
+    [SerializeField] public float startledSpeed = 2f;
+    [SerializeField] public float idleSpeed = 1f;
+    [SerializeField] public float acceleration = 8.0f;
 
     void Awake()
     {
@@ -83,8 +84,14 @@ public class EnemyAI : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    //Virtual is for abstraction
+    public virtual void Update()
     {
+        if (FeedbackDisplay != null)
+        {
+            FeedbackDisplay.text = currState.ToString();
+        }
+        
         if (currState == AIStates.Chasing)
         {
             lastKnownLocation = currTarget.transform.position;
@@ -105,9 +112,9 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private void PlayGrowlSound()
+    public void PlayGrowlSound()
     {
-        if(!willGrowl)
+        if (!willGrowl)
         {
             return;
         }
@@ -115,9 +122,9 @@ public class EnemyAI : MonoBehaviour
         willGrowl = false;
     }
 
-    private void PlayWalkSound()
+    public void PlayWalkSound()
     {
-        if(isWalking)
+        if (isWalking)
         {
             return;
         }
@@ -125,9 +132,9 @@ public class EnemyAI : MonoBehaviour
         isWalking = true;
     }
 
-    private void StopWalkSound()
+    public void StopWalkSound()
     {
-        if(!isWalking)
+        if (!isWalking)
         {
             return;
         }
@@ -209,7 +216,7 @@ public class EnemyAI : MonoBehaviour
 
 
 #if UNITY_EDITOR
-[CustomEditor(typeof(EnemyAI))]
+[CustomEditor(typeof(EnemyAI), true)]
 public class EnemyAIEditor : Editor
 {
     public void OnSceneGUI()

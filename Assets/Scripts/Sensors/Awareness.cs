@@ -71,7 +71,7 @@ public class Awareness : MonoBehaviour
     //This allows the use of an animation curve to dictate the vision values. 
     //Ie perifierals add less while direct center adds a lot
     [SerializeField] AnimationCurve VisionSensitivity;
-    [SerializeField] float VisionBaseAwareness = 1; //Min awareness
+    [SerializeField] float VisionBaseAwareness = 1f; //Min awareness
     [SerializeField] float VisionAwarnessRate = 10; //aggro gained per second
 
     [SerializeField] float HearingBaseAwareness = 0;
@@ -99,7 +99,7 @@ public class Awareness : MonoBehaviour
         List<GameObject> toCleanUp = new List<GameObject>();
         foreach (var targetGameObject in targets.Keys)
         {
-            //Debug.Log("Threshold change for " + targetGameObject.name + " " + targets[targetGameObject].awareness);
+            Debug.Log("Threshold change for " + targetGameObject.name + " " + targets[targetGameObject].awareness);
             //If detection = 0 remove
             if (targets[targetGameObject].DecayAwareness(DecayDelay, DecayRate * Time.deltaTime))
             {
@@ -180,4 +180,6 @@ public class Awareness : MonoBehaviour
 
         UpdateAwareness(detectable.gameObject, detectable, detectable.transform.position, awareness, ProximityBaseAwareness);
     }
+
+    
 }

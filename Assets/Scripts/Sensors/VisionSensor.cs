@@ -4,8 +4,8 @@ using UnityEngine;
 
 [RequireComponent(typeof(EnemyAI))]
 public class VisionSensor : MonoBehaviour
-{   
-    
+{
+
     [SerializeField] LayerMask DetectionMask = ~0; //~0 detects everything
 
     EnemyAI currAI;
@@ -13,6 +13,7 @@ public class VisionSensor : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        DetectionMask = ~(1 << LayerMask.NameToLayer("Entities"));
         currAI = GetComponent<EnemyAI>();
     }
 
@@ -27,11 +28,11 @@ public class VisionSensor : MonoBehaviour
 
         //Check all detectable entities
         //Debug.Log("VisionSensor: Checking detectables..."+ DetectableManager.Instance.AllDetectables.Count);
-        for (int i = 0; i< DetectableManager.Instance.AllDetectables.Count; i++)
+        for (int i = 0; i < DetectableManager.Instance.AllDetectables.Count; i++)
         {
             Detectable target = DetectableManager.Instance.AllDetectables[i];
 
-            if(target == null || target.gameObject == this.gameObject)
+            if (target == null || target.gameObject == this.gameObject)
             {
                 continue; //Skip self and null targets
             }
@@ -41,7 +42,7 @@ public class VisionSensor : MonoBehaviour
             Vector3 vectorToTarget = target.transform.position - currAI.EyeLocation;
 
             //If out of range then cant detect
-            if(vectorToTarget.sqrMagnitude > (currAI.VisionConeRange * currAI.VisionConeRange))
+            if (vectorToTarget.sqrMagnitude > (currAI.VisionConeRange * currAI.VisionConeRange))
             {   //Optimization to avoid sqrt calculation
                 continue;
             }
@@ -49,7 +50,7 @@ public class VisionSensor : MonoBehaviour
             //If not in cone (fov) then cant detect
             //Basically take dot product and compare to cosine and if its less than the angle then its outside fov
             //EyeDirection is just target.transform.forward
-            if(Vector3.Dot(vectorToTarget.normalized, currAI.EyeDirection) <= currAI.CosVisionConeAngle)
+            if (Vector3.Dot(vectorToTarget.normalized, currAI.EyeDirection) <= currAI.CosVisionConeAngle)
             {
                 continue;
             }
@@ -58,15 +59,20 @@ public class VisionSensor : MonoBehaviour
             //Send Ray from current Eye location and direction max VisionConeRange
             //Should be fine to direct towards target since it already passed prev conditions
             Debug.DrawRay(currAI.EyeLocation, currAI.EyeDirection, Color.blue, 1.0f);
-            
-            if(Physics.Raycast(currAI.EyeLocation, vectorToTarget.normalized, out hitInfo, 
+
+            if (Physics.Raycast(currAI.EyeLocation, vectorToTarget.normalized, out hitInfo,
                                 currAI.VisionConeRange, DetectionMask, QueryTriggerInteraction.Collide))
             {
-                if(hitInfo.collider.gameObject == target.gameObject)
+                if (hitInfo.collider.gameObject == target.gameObject || hitInfo.collider.transform.IsChildOf(target.transform))
                 {
+                    //Debug.Log("I SEE YOU: " + hitInfo.collider.gameObject.name);
                     currAI.CanSee(target);
                 }
-                
+                else
+                {
+                    //Debug.Log("Ray hit something else: " + hitInfo.collider.gameObject.name);
+                }
+
             }
 
         }
