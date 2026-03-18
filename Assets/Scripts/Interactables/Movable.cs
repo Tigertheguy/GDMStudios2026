@@ -9,12 +9,14 @@ public class Movable : Interactable
     void Start() 
     {
         rb = GetComponent<Rigidbody>();
-
+        print("found");
         if (holdPosition == null)
         {
+            print("found");
             GameObject player = GameObject.FindWithTag("Player");
             if (player != null)
             {
+                print("found");
                 holdPosition = player.transform.Find("HoldPos");
             }
         }
