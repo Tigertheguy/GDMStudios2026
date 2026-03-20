@@ -1,37 +1,41 @@
+using System.Collections; // Required for Coroutines
 using UnityEngine;
 
 public class DoorDetection : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    public GameObject leftDoor;
+    public GameObject rightDoor;
+    public float openSpeed = 2f;
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if the object collided has KeyScript component
         if (other.gameObject.GetComponent<KeyScript>() != null)
         {
-            Debug.Log("Key detected! You can now open the door.");
-
-
-            Collider[] allColliders = GetComponents<Collider>();
-            foreach (Collider col in allColliders)
-            {
-                col.enabled = false;
-            }
-
-            if (TryGetComponent<Renderer>(out Renderer ren))
-            {
-                ren.enabled = false;
-            }
+            Destroy(other.gameObject);
+            StartCoroutine(OpenDoors());
+            GetComponent<Collider>().enabled = false;
         }
+    }
+
+    IEnumerator OpenDoors()
+    {
+    float elapsed = 0;
+
+    Quaternion leftStart = leftDoor.transform.localRotation;
+    Quaternion rightStart = rightDoor.transform.localRotation;
+
+    Quaternion leftTarget = leftStart * Quaternion.Euler(0, -90, 0);
+    Quaternion rightTarget = rightStart * Quaternion.Euler(0, 90, 0);
+
+    while (elapsed < 1f)
+    {
+        elapsed += Time.deltaTime * openSpeed;
+        leftDoor.transform.localRotation = Quaternion.Slerp(leftStart, leftTarget, elapsed);
+        rightDoor.transform.localRotation = Quaternion.Slerp(rightStart, rightTarget, elapsed);
+        
+        yield return null;
+    }
+    leftDoor.transform.localRotation = leftTarget;
+    rightDoor.transform.localRotation = rightTarget;
     }
 }
