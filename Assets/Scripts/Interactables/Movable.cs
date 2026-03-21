@@ -41,6 +41,13 @@ public class Movable : Interactable
         transform.localPosition = Vector3.zero;
         transform.localRotation = Quaternion.identity; 
         Physics.SyncTransforms();
+
+        // --- ADD THIS PART ---
+        KeySpin spinner = GetComponent<KeySpin>();
+        if (spinner != null)
+        {
+            spinner.enabled = false;
+        }
     }
 
     private void Drop()

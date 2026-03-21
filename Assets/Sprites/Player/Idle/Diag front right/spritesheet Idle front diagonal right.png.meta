@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,13 +37,13 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -93,14 +93,555 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_0
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 2192
+        width: 1300
+        height: 1680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5908742e7168149f0816a31356011765
+      internalID: -540968429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_1
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 2668
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d321e3708454a70be6739c02c3c37c
+      internalID: -744458320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_2
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 2178
+        width: 1300
+        height: 1680
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb11f5e7eea540e19b68dfd8f65f53c
+      internalID: -1502007550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_3
+      rect:
+        serializedVersion: 2
+        x: 3728
+        y: 2628
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92944b578c2fd4cea80bef05bfbf0944
+      internalID: 681627756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_4
+      rect:
+        serializedVersion: 2
+        x: 4488
+        y: 2178
+        width: 1300
+        height: 1660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3758ef1739c04e17b02a6232fbbe909
+      internalID: -722026932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_5
+      rect:
+        serializedVersion: 2
+        x: 5776
+        y: 2660
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe36280037df478cb7d80cbe6409a1e
+      internalID: -1166436618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_6
+      rect:
+        serializedVersion: 2
+        x: 6502
+        y: 2178
+        width: 1320
+        height: 1660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e49dd5ea510b74371bd17c8d005d11c3
+      internalID: -1546712258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_7
+      rect:
+        serializedVersion: 2
+        x: 7844
+        y: 2648
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009cf3ccd13944648b62734c0eb7ee9f
+      internalID: -861598931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_8
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 2636
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd79626c374a4cb9b03219ededc399f
+      internalID: -1605012451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_9
+      rect:
+        serializedVersion: 2
+        x: 5760
+        y: 2636
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2585c2e2b507240c485ec83896cfc595
+      internalID: 1811103116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_10
+      rect:
+        serializedVersion: 2
+        x: 7836
+        y: 2632
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f393900f630424dbdd2b2f644d9bbd
+      internalID: 1421991501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_11
+      rect:
+        serializedVersion: 2
+        x: 1652
+        y: 2616
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa09504d8d8384945aaee0361c33ab54
+      internalID: 2062114794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_12
+      rect:
+        serializedVersion: 2
+        x: 5748
+        y: 2616
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb9163c79b4243fd9a4966e1db1603c
+      internalID: 65052957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_13
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 2047
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b812d5539241342b29b71f2f45627f97
+      internalID: 200806040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_14
+      rect:
+        serializedVersion: 2
+        x: 4028
+        y: 2047
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28438e9a69e724913b6331ac269b0a92
+      internalID: 279691905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_15
+      rect:
+        serializedVersion: 2
+        x: 6076
+        y: 2047
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf1c54a06f6fd43f992f1d4c3beee7e7
+      internalID: -2016114801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_16
+      rect:
+        serializedVersion: 2
+        x: 8124
+        y: 2047
+        width: 32
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e657c2bb39ace4a1198c27d020d4be45
+      internalID: -2075970286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_17
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 130
+        width: 1300
+        height: 1660
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f408a37c12148d5b5ce695b2cb9681
+      internalID: 702439956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_18
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 612
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ac3e93a7b4b4be9943a81f447108b9
+      internalID: -764173997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_19
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 130
+        width: 1300
+        height: 1700
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a759779db464420a9077e559b3cf66
+      internalID: 154404781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_20
+      rect:
+        serializedVersion: 2
+        x: 3692
+        y: 576
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236270830c85341d6930ee45f39a5031
+      internalID: 1933417851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_21
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 580
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce159db96e7cd4c14abfe3d2af05628f
+      internalID: -403501180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_22
+      rect:
+        serializedVersion: 2
+        x: 1979
+        y: 0
+        width: 33
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb67ba00fe614daeb1a064c1f3f9900
+      internalID: -1394634871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet Idle front diagonal right_23
+      rect:
+        serializedVersion: 2
+        x: 4027
+        y: 0
+        width: 33
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3dd01e6ba37434e9df5bba7bf39c99
+      internalID: -799736454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1bcb07ae0c20e4151be81b958d2507c5
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +649,34 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      spritesheet Idle front diagonal right_0: -540968429
+      spritesheet Idle front diagonal right_1: -744458320
+      spritesheet Idle front diagonal right_10: 1421991501
+      spritesheet Idle front diagonal right_11: 2062114794
+      spritesheet Idle front diagonal right_12: 65052957
+      spritesheet Idle front diagonal right_13: 200806040
+      spritesheet Idle front diagonal right_14: 279691905
+      spritesheet Idle front diagonal right_15: -2016114801
+      spritesheet Idle front diagonal right_16: -2075970286
+      spritesheet Idle front diagonal right_17: 702439956
+      spritesheet Idle front diagonal right_18: -764173997
+      spritesheet Idle front diagonal right_19: 154404781
+      spritesheet Idle front diagonal right_2: -1502007550
+      spritesheet Idle front diagonal right_20: 1933417851
+      spritesheet Idle front diagonal right_21: -403501180
+      spritesheet Idle front diagonal right_22: -1394634871
+      spritesheet Idle front diagonal right_23: -799736454
+      spritesheet Idle front diagonal right_3: 681627756
+      spritesheet Idle front diagonal right_4: -722026932
+      spritesheet Idle front diagonal right_5: -1166436618
+      spritesheet Idle front diagonal right_6: -1546712258
+      spritesheet Idle front diagonal right_7: -861598931
+      spritesheet Idle front diagonal right_8: -1605012451
+      spritesheet Idle front diagonal right_9: 1811103116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

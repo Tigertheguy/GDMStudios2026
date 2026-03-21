@@ -11,7 +11,7 @@
                     "type": "Value",
                     "id": "9a0c725d-ed67-4cdb-a26e-ccddd76b4811",
                     "expectedControlType": "Vector2",
-                    "processors": "",
+                    "processors": "NormalizeVector2",
                     "interactions": "",
                     "initialStateCheck": true
                 },
@@ -28,6 +28,15 @@
                     "name": "Meditate",
                     "type": "Button",
                     "id": "822c40b1-5980-4b90-8c7e-bafbb55fdfee",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "0cd329d9-0364-4604-a8a2-4745acd27890",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -102,6 +111,61 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Arrows",
+                    "id": "183411d4-7f37-46c7-b724-b7baf93fc980",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "bdf442d9-1a54-4cf7-8c1a-435f1cc4e17a",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "6e306fc6-4441-4bce-80f7-5deb5c808ae4",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "384e6f9b-5983-416f-8e70-0551c1cf50b9",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "64600ca1-216e-4431-80dd-946f6b5b5f23",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "93a7c829-2d7e-4de9-97b9-ff4be9ed56cd",
                     "path": "<Keyboard>/#(E)",
@@ -120,6 +184,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Meditate",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4cac4296-79fb-43df-b52c-4128601e6a96",
+                    "path": "<Keyboard>/leftShift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

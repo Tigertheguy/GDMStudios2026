@@ -33,6 +33,11 @@ public class PlayerController : MonoBehaviour
         //rb = gameObject.GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
+
+
+        // start facing the front 
+        animator.SetFloat("LastMoveX", 0f);
+        animator.SetFloat("LastMoveY", -1f);
     }
 
     //New unity input system
@@ -47,32 +52,45 @@ public class PlayerController : MonoBehaviour
         }
         //Logs input in console
         //Debug.Log($"Move Input: {moveInput}");
+        //prevents player from  moving faster diagonally
+        if (moveInput.sqrMagnitude > 1) 
+        {
+        moveInput.Normalize();
+        }
     }
 
     // Update is called once per frame.
     // There is also fixed update which can run multiple times per frame I think
     // I think update is fine for our purposes
     void Update()
+{
+    if(playerSanity.IsMeditating)
     {
-
-        if(playerSanity.IsMeditating)
-        {
-            //Meditation animations?
-            stepTimer = 0;
-            return;
-        }
-
-        Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
-        controller.Move(move * playerSpd * Time.deltaTime);
-        animator.SetFloat("MoveX", moveInput.x);
-        animator.SetFloat("MoveY", moveInput.y);
-        animator.SetFloat("Speed", moveInput.magnitude);
-        
-        HandleSoundEmission();
-        oldRaycast();
-        //moveInput.y += gravity * Time.deltaTime; //Causes sliding 
-
+        // Meditation animations?
+        stepTimer = 0;
+        return;
     }
+
+    // 1. Calculate movement
+    Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
+    controller.Move(move * playerSpd * Time.deltaTime);
+
+    // 2. Update the standard Walking parameters
+    animator.SetFloat("MoveX", moveInput.x);
+    animator.SetFloat("MoveY", moveInput.y);
+    animator.SetFloat("Speed", moveInput.magnitude);
+
+    
+    // use a small buffer (0.1f) to ensure we caught the last direction
+    if (moveInput.magnitude > 0.1f)
+    {
+        animator.SetFloat("LastMoveX", moveInput.x);
+        animator.SetFloat("LastMoveY", moveInput.y);
+    }
+    
+    HandleSoundEmission();
+    oldRaycast();
+}
 
     void oldRaycast()
     {
