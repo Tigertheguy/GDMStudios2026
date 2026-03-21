@@ -11,6 +11,9 @@ public class TrackedTarget
     public float lastSensedTime = -1;
     public float awareness; //0 - not aware, 0-1 aware, 1-2 highly aware (turn to see), 2 full aggro
 
+    public const float MaxAwareness = 2.5f;
+    public const float MinAwareness = 0f;
+
     public bool UpdateAwareness(Detectable detectable, Vector3 position, float awareness, float minAwareness)
     {
         var oldAwareness = this.awareness;
@@ -19,7 +22,7 @@ public class TrackedTarget
         this.rawPos = position;
         this.lastSensedTime = Time.time;
 
-        this.awareness = Mathf.Clamp(Mathf.Max(this.awareness, minAwareness) + awareness, 0, 2);
+        this.awareness = Mathf.Clamp(Mathf.Max(this.awareness, minAwareness) + awareness, minAwareness, MaxAwareness);
 
         //Recently detected
         if (oldAwareness < 2 && this.awareness >= 2)
