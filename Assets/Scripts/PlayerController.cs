@@ -3,6 +3,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    private bool wasMovingLastFrame; // Add this at the top of your class with other variables
     //Can edit in unity but remains private
     [Header("Player Settings")]
     [SerializeField] private float playerSpd = 3f;
@@ -18,6 +19,11 @@ public class PlayerController : MonoBehaviour
     private float stepTimer;
 
     [SerializeField] private PlayerSanity playerSanity;
+
+    [Header("Diagonal Buffer Settings")]
+    [SerializeField] private float diagonalBufferTime = 0.1f;
+    private float diagonalTimer;
+    private Vector2 lastDiagonalInput;
 
     public LayerMask terrainLayer;
     //public Rigidbody rb;
@@ -70,22 +76,58 @@ public class PlayerController : MonoBehaviour
         stepTimer = 0;
         return;
     }
-
-    // 1. Calculate movement
+// 1. Calculate and Execute Movement
     Vector3 move = new Vector3(moveInput.x, 0, moveInput.y);
     controller.Move(move * playerSpd * Time.deltaTime);
 
-    // 2. Update the standard Walking parameters
+    // 2. State Detection
+    bool isMoving = moveInput.sqrMagnitude > 0.01f;
+    bool isInputDiagonal = Mathf.Abs(moveInput.x) > 0.1f && Mathf.Abs(moveInput.y) > 0.1f;
+
+    // 3. Update Animator Parameters
+    if (isMoving)
+    {
+    // 1. FIRST: Set the direction (LastMove)
+    if (isInputDiagonal)
+    {
+        lastDiagonalInput = new Vector2(moveInput.x > 0 ? 1 : -1, moveInput.y > 0 ? 1 : -1);
+        diagonalTimer = diagonalBufferTime;
+        animator.SetFloat("LastMoveX", lastDiagonalInput.x);
+        animator.SetFloat("LastMoveY", lastDiagonalInput.y);
+    }
+    else if (diagonalTimer > 0)
+    {
+        diagonalTimer -= Time.deltaTime;
+        // Keep the diagonal locked
+        animator.SetFloat("LastMoveX", lastDiagonalInput.x);
+        animator.SetFloat("LastMoveY", lastDiagonalInput.y);
+    }
+    else
+    {
+        animator.SetFloat("LastMoveX", moveInput.x > 0.1f ? 1 : (moveInput.x < -0.1f ? -1 : 0));
+        animator.SetFloat("LastMoveY", moveInput.y > 0.1f ? 1 : (moveInput.y < -0.1f ? -1 : 0));
+    }
+
+    // 2. SECOND: Set the Speed (This triggers the state switch)
     animator.SetFloat("MoveX", moveInput.x);
     animator.SetFloat("MoveY", moveInput.y);
     animator.SetFloat("Speed", moveInput.magnitude);
-
     
-    // use a small buffer (0.1f) to ensure we caught the last direction
-    if (moveInput.magnitude > 0.1f)
+    wasMovingLastFrame = true;
+    }
+    else
     {
-        animator.SetFloat("LastMoveX", moveInput.x);
-        animator.SetFloat("LastMoveY", moveInput.y);
+        if (wasMovingLastFrame)
+        {
+            Debug.Log($"<color=cyan>STOPPED:</color> LastMoveX: {animator.GetFloat("LastMoveX")}, LastMoveY: {animator.GetFloat("LastMoveY")}");
+            wasMovingLastFrame = false;
+        }
+
+        // ONLY set Speed to 0. 
+        // DO NOT set MoveX or MoveY to 0. 
+        // This keeps the "red dot" in the Blend Tree on the diagonal.
+        animator.SetFloat("Speed", 0);
+        diagonalTimer = 0;
     }
     
     HandleSoundEmission();

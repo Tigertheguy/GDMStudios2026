@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -37,24 +37,24 @@ TextureImporter:
     filterMode: 1
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 250
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -93,14 +93,357 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_0
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 7787
+        width: 2023
+        height: 2171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0d8f8c95fc5466286b569a44d25291
+      internalID: -2125870477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_1
+      rect:
+        serializedVersion: 2
+        x: 3955
+        y: 7787
+        width: 2022
+        height: 2146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72a0f2a424ed400a88a1c185e7c3fa2
+      internalID: 1285795445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_2
+      rect:
+        serializedVersion: 2
+        x: 7255
+        y: 7787
+        width: 2023
+        height: 2155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d209e1e408a456ea1e7426153013ca
+      internalID: -1564680331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_3
+      rect:
+        serializedVersion: 2
+        x: 10555
+        y: 7787
+        width: 2023
+        height: 2171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da01134a335c24de08385c0c680fd574
+      internalID: -75148916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_4
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 5237
+        width: 2023
+        height: 2170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8686001fdb6e4610bbe30ffe3ead4b9
+      internalID: -11660514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_5
+      rect:
+        serializedVersion: 2
+        x: 3955
+        y: 5237
+        width: 2023
+        height: 2170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b58cc2a330e24a78a131e257cb303b6
+      internalID: 1222245728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_6
+      rect:
+        serializedVersion: 2
+        x: 7255
+        y: 5237
+        width: 2023
+        height: 2170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4f2c6545a8a4a8f897f11e63b9a56b
+      internalID: 582670975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_7
+      rect:
+        serializedVersion: 2
+        x: 10555
+        y: 5237
+        width: 2023
+        height: 2170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39013d4010734562a01a0a924a70260
+      internalID: -499184049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_8
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 2690
+        width: 2022
+        height: 2146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c496a39a4a9c4957af1400b2fec6f5c
+      internalID: 1902169081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_9
+      rect:
+        serializedVersion: 2
+        x: 3955
+        y: 2690
+        width: 2023
+        height: 2165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb11777530c434705905a42f1198d6fe
+      internalID: -1271381228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_10
+      rect:
+        serializedVersion: 2
+        x: 7255
+        y: 2690
+        width: 2023
+        height: 2146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d91aae5c9dab8452e953568f70f769f7
+      internalID: 1333290657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_11
+      rect:
+        serializedVersion: 2
+        x: 10555
+        y: 2690
+        width: 2023
+        height: 2165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c17d3204cf7f64055ae6e0d16f69376b
+      internalID: 281715463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_12
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 139
+        width: 2023
+        height: 2165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2ee20e98dc104be4ba5721989d3e889
+      internalID: -405287722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_13
+      rect:
+        serializedVersion: 2
+        x: 3955
+        y: 139
+        width: 2023
+        height: 2158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff73cb2bd0c84312b7c8e9b451e2557
+      internalID: -2028222319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet eyeball idle_14
+      rect:
+        serializedVersion: 2
+        x: 7255
+        y: 139
+        width: 2023
+        height: 2165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61801c50dd26a484a97b4bcb59e8021f
+      internalID: -311043124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 85502d23c14e54a129fdac496bb75812
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +451,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      spritesheet eyeball idle_0: -2125870477
+      spritesheet eyeball idle_1: 1285795445
+      spritesheet eyeball idle_10: 1333290657
+      spritesheet eyeball idle_11: 281715463
+      spritesheet eyeball idle_12: -405287722
+      spritesheet eyeball idle_13: -2028222319
+      spritesheet eyeball idle_14: -311043124
+      spritesheet eyeball idle_2: -1564680331
+      spritesheet eyeball idle_3: -75148916
+      spritesheet eyeball idle_4: -11660514
+      spritesheet eyeball idle_5: 1222245728
+      spritesheet eyeball idle_6: 582670975
+      spritesheet eyeball idle_7: -499184049
+      spritesheet eyeball idle_8: 1902169081
+      spritesheet eyeball idle_9: -1271381228
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
