@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 59da9994d703b2d4fb7205c9632485c6
+guid: ccb04e6341a908c40ab7b6dd0363ccf9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Berries_0
+      name: Enemy 2_0
       rect:
         serializedVersion: 2
-        x: 248
-        y: 112
-        width: 1706
-        height: 1815
+        x: 661
+        y: 144
+        width: 2013
+        height: 2157
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,8 +112,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b9056a92d98ac547a2b162279ce2d8f
-      internalID: -804107666
+      spriteID: c3d1bf621f6250c498f9ccdb59b21c20
+      internalID: -580053499
       vertices: []
       indices: 
       edges: []
@@ -122,7 +122,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5ffe158a406d21544bbd44c9e52b6a8c
+    spriteID: 4bcbf28348cf30a4f8ec18a1b046873c
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +134,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Berries_0: -804107666
+      Enemy 2_0: -580053499
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
