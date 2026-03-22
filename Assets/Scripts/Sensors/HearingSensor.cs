@@ -8,6 +8,7 @@ using UnityEngine;
 
 public class HearingSensor : MonoBehaviour
 {
+    private float soundMultiplier = 1f; // This can be adjusted based on the enemy's hearing sensitivity
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,11 +34,16 @@ public class HearingSensor : MonoBehaviour
         //In range
         if (Vector3.Distance(transform.position, location) <= GetComponent<EnemyAI>().HearingRange)
         {
-            GetComponent<EnemyAI>().CanHear(source, location, soundType, loudness);
+            GetComponent<EnemyAI>().CanHear(source, location, soundType, loudness * soundMultiplier);
         }//Out of range
         else
         {
             return;
         }
+    }
+
+    public void SetSoundMultiplier(float multiplier)
+    {
+        soundMultiplier = multiplier;
     }
 }

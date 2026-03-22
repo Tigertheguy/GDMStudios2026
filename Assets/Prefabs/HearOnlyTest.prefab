@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4175345820213856567
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -47.787983
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0000075308562
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.536299
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.69602805
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.71801466
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 91.782
+      objectReference: {fileID: 0}
+    - target: {fileID: 2625791033914840459, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2697807088790735417, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_Name
+      value: HearOnlyTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 7390118269617449102, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.6
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4882566468306426673, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2697807088790735417, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 367807149563802701}
+  m_SourcePrefab: {fileID: 100100000, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+--- !u!195 &1763719376818863711 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 2416237874165888872, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+  m_PrefabInstance: {fileID: 4175345820213856567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2054001683945833230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2697807088790735417, guid: abcb371452c65964fa983a14bb4ac306, type: 3}
+  m_PrefabInstance: {fileID: 4175345820213856567}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &367807149563802701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2054001683945833230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65cbd361caf08c04f8f4c9441c077b3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HearOnly
+  FeedbackDisplay: {fileID: 0}
+  _VisionConeAngle: 60
+  _VisionConeRange: 0
+  _VisionConeColour: {r: 1, g: 0, b: 0, a: 0.25}
+  _HearingRange: 30
+  _HearingRangeColour: {r: 1, g: 1, b: 0, a: 0.25}
+  _ProximityDetectionRange: 5
+  _ProximityRangeColour: {r: 1, g: 1, b: 1, a: 0.25}
+  _startEnemyWalkRandomEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _stopEnemyWalkRandomEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  _startEnemyGrowl1:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  navAgent: {fileID: 1763719376818863711}
+  currState: 0
+  currTarget: {fileID: 0}
+  lastKnownLocation: {x: 0, y: 0, z: 0}
+  isWalking: 0
+  willGrowl: 0
+  chaseSpeed: 8
+  roamSpeed: 6.5
+  searchSpeed: 4
+  startledSpeed: 2
+  idleSpeed: 1
+  acceleration: 8
+  initialPosition: {x: 0, y: 0, z: 0}
+  _roamRadius: 20
+  _idleListenTime: 3
+  _startledListenTime: 2
+  _searchingListenTime: 0.5
+  _roamingListenTime: 0.5
+  _idleHearingMultiplier: 3
