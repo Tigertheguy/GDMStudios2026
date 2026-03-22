@@ -72,6 +72,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] public float idleSpeed = 1f;
     [SerializeField] public float acceleration = 8.0f;
 
+    public Vector3 initialPosition;
+
     void Awake()
     {
         CosVisionConeAngle = Mathf.Cos(VisionConeAngle * Mathf.Deg2Rad);
@@ -81,10 +83,11 @@ public class EnemyAI : MonoBehaviour
         hitbox = GetComponentInChildren<HitBoxController>();
     }
 
-    void Start()
+    public void Start()
     {
         isWalking = false;
         willGrowl = true;
+        initialPosition = transform.position;
     }
 
     public void StunCheck()

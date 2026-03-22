@@ -110,15 +110,18 @@ MonoBehaviour:
   isWalking: 0
   willGrowl: 0
   chaseSpeed: 8
-  roamSpeed: 6.5
+  roamSpeed: 5
   searchSpeed: 4
   startledSpeed: 2
   idleSpeed: 1
   acceleration: 8
-  roamRadius: 20
-  idleScanTime: 3
-  startledScanTime: 2
-  searchingScanTime: 0.5
-  roamingScanTime: 0.5
-  searchRotateSpeed: 120
-  roamRotateSpeed: 250
+  initialPosition: {x: 0, y: 0, z: 0}
+  _roamRadius: 20
+  _idleScanTime: 3
+  _startledScanTime: 2
+  _searchingScanTime: 0.5
+  _roamingScanTime: 0.5
+  _idleRotateSpeed: 5
+  _searchRotateSpeed: 40
+  _roamRotateSpeed: 40
+  _scanCone: 90
