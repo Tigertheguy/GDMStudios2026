@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class SanityUI : MonoBehaviour
 {
     [Header("References")]
-    [SerializeField] private Slider _slider;
+    [SerializeField] private Slider _sanitySlider;
+    [SerializeField] private Slider _hpSlider;
     [SerializeField] private PlayerSanity _playerSanity;
     [SerializeField] private MusicSwitch _musicSwitch;
 
@@ -35,16 +36,20 @@ public class SanityUI : MonoBehaviour
 
     void Start()
     {
-        _slider.maxValue = _playerSanity.MaxSanity;
+        _sanitySlider.maxValue = _playerSanity.MaxSanity;
+        _hpSlider.maxValue = _playerSanity.MaxHp;
         //Get filled part as image to mess around with later
-        _sliderFillImage = _slider.fillRect.GetComponent<Image>();
+        _sliderFillImage = _sanitySlider.fillRect.GetComponent<Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float currentSanity = _playerSanity.GetSanity();
-        _slider.value = Mathf.Lerp(_slider.value, currentSanity, 5f * Time.deltaTime);
+        _sanitySlider.value = Mathf.Lerp(_sanitySlider.value, currentSanity, 5f * Time.deltaTime);
+
+        float currentHp = _playerSanity.CurrentHp;
+        _hpSlider.value = Mathf.Lerp(_hpSlider.value, currentHp, 5f * Time.deltaTime);
 
         MeditationFlicker();
         MeditationCheck();

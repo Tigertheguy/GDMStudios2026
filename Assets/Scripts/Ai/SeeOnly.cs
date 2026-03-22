@@ -20,6 +20,7 @@ public class SeeOnly : EnemyAI
     // Update is called once per frame
     public override void Update()
     {
+        StunCheck();
         
         if (currState == AIStates.Chasing)
         {
@@ -41,7 +42,7 @@ public class SeeOnly : EnemyAI
 
         if (currState == AIStates.Idle)
         {
-            Debug.Log("Idle");
+            //Debug.Log("Idle");
             SeeOnlyIdle();
         }
 
@@ -72,6 +73,18 @@ public class SeeOnly : EnemyAI
     }
     private void SeeOnlyIdle()
     {
+    }
+
+    private void SetNewDestination()
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * roamRadius;
+        randomDirection += transform.position;
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(randomDirection, out hit, roamRadius, 1))
+        {
+            roamDestination = hit.position;
+            navAgent.SetDestination(roamDestination);
+        }
     }
 
 }

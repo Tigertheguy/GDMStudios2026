@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.AI;
+using Mono.Cecil.Cil;
+
 
 
 #if UNITY_EDITOR
@@ -60,6 +62,8 @@ public class EnemyAI : MonoBehaviour
     public bool isWalking;
     public bool willGrowl;
 
+    private HitBoxController hitbox;
+
     [Header("Movement Settings")]
     [SerializeField] public float chaseSpeed = 8.0f;
     [SerializeField] public float roamSpeed = 6.5f;
@@ -74,6 +78,7 @@ public class EnemyAI : MonoBehaviour
         awareness = GetComponent<Awareness>();
         navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         navAgent.acceleration = acceleration;
+        hitbox = GetComponentInChildren<HitBoxController>();
     }
 
     void Start()
@@ -82,16 +87,31 @@ public class EnemyAI : MonoBehaviour
         willGrowl = true;
     }
 
-
+    public void StunCheck()
+    {
+        //Stop if stunned
+        if (hitbox.isStunned)
+        {
+            if (navAgent.isOnNavMesh) navAgent.isStopped = true;
+            return;
+        }
+        //Unstun 
+        if (navAgent.isOnNavMesh && navAgent.isStopped)
+        {
+            navAgent.isStopped = false;
+        }
+    }
     // Update is called once per frame
     //Virtual is for abstraction
     public virtual void Update()
     {
+        StunCheck();
+
         if (FeedbackDisplay != null)
         {
             FeedbackDisplay.text = currState.ToString();
         }
-        
+
         if (currState == AIStates.Chasing)
         {
             lastKnownLocation = currTarget.transform.position;

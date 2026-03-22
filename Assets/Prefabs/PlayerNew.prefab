@@ -32,7 +32,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.029, y: -1.165, z: 0.06}
   m_LocalScale: {x: 5.9463544, y: 7.873484, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4307123756528851496}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -141,7 +141,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 124
   m_CollisionDetection: 1
 --- !u!114 &4640610933095212930
 MonoBehaviour:
@@ -165,6 +165,10 @@ MonoBehaviour:
   _meditationDurationMax: 5
   _rampThreshold: 1
   _rampingStrength: 0.5
+  _maxHp: 2
+  _currentHp: 2
+  _SmokeBombs: 0
+  _iFrameDuration: 1
 --- !u!1 &4036299008611158716
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +220,7 @@ GameObject:
   - component: {fileID: 5175999225379900317}
   m_Layer: 8
   m_Name: PlayerNew
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -283,8 +287,8 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 1
@@ -338,6 +342,7 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: f3b491e9c609b451dafb9aa4f8ebccd0, type: 2}
   playerSanity: {fileID: 4640610933095212930}
+  diagonalBufferTime: 0.1
   terrainLayer:
     serializedVersion: 2
     m_Bits: 128

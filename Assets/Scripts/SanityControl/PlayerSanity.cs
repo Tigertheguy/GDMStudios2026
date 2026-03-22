@@ -19,6 +19,13 @@ public class PlayerSanity : MonoBehaviour
     [SerializeField] private float _rampThreshold = 1f; //Time to ramp meditation regen
     [SerializeField] private float _rampingStrength = 0.5f; //How strong the ramping is, 0.5 means after 1s you get 50% more regen, after 2s you get 100% more regen etc
 
+    [Header("Hp")]
+    [SerializeField] private float _maxHp = 2f;
+    [SerializeField] private float _currentHp = 2f;
+    [SerializeField] private float _SmokeBombs = 0f; 
+    [SerializeField] private float _iFrameDuration = 0.5f;
+    private float _iFrameTime = 0f;
+
     private float _lastNearEnemy = 0f;
     private bool _isMeditating = false;
     private int _currentMeditationCount = 0;
@@ -148,10 +155,29 @@ public class PlayerSanity : MonoBehaviour
         }
     }
 
+    public void TakeDamage(float amount)
+    {
+        if (Time.time < _iFrameTime) return; //i frames
+
+        _currentHp -= amount;
+        _currentHp = Mathf.Clamp(_currentHp, 0f, _maxHp);
+
+        _iFrameTime = Time.time + _iFrameDuration;
+
+        if (_currentHp <= 0) Die();
+    }
+
+    public void Die()
+    {
+        //Handle player death here
+        Debug.Log("Player has died.");
+    }
+
     public float MaxSanity => _maxSanity;
     public int CurrentMeditationCount => _currentMeditationCount;
     public int MeditationCap => _meditationCap;
     public bool IsMeditating => _isMeditating;
     public float MeditationTimer => _meditationTimer;
-
+    public float CurrentHp => _currentHp;
+    public float MaxHp => _maxHp;
 }

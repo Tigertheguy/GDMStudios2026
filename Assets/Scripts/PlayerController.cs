@@ -119,7 +119,7 @@ public class PlayerController : MonoBehaviour
     {
         if (wasMovingLastFrame)
         {
-            Debug.Log($"<color=cyan>STOPPED:</color> LastMoveX: {animator.GetFloat("LastMoveX")}, LastMoveY: {animator.GetFloat("LastMoveY")}");
+            //Debug.Log($"<color=cyan>STOPPED:</color> LastMoveX: {animator.GetFloat("LastMoveX")}, LastMoveY: {animator.GetFloat("LastMoveY")}");
             wasMovingLastFrame = false;
         }
 
