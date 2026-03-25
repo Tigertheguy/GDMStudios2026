@@ -382,6 +382,290 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="DoorOpen" ID="{AF078095-F17B-4B6F-B9B0-4553F672412C}" ShortID="601433783">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A2F09CF6-9B76-42A7-9F00-29662908F374}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="DoorOpen" ID="{0926BBC2-5CA8-4E5F-8C31-7311927E8DB8}">
+							<Language>SFX</Language>
+							<AudioFile>DoorOpen.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="614609850"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="DoorOpen" ID="{0926BBC2-5CA8-4E5F-8C31-7311927E8DB8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemyCrawl" ID="{17201120-DDD4-4A20-A5EA-98E4138CD7A4}" ShortID="107560358">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7457C63F-60BD-4A2F-96E6-6E7F23C73EE9}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="325"/>
+											<Property Name="Min" Type="Real64" Value="-725"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C3701E15-9D8B-4408-8E27-FDD0E9F43DF6}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EnemyCrawl" ID="{89A6EBA4-A519-442D-BB0C-5E3EDF633D88}">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="305.338"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0.445629222972973"/>
+								<Property Name="LoopEnd" Type="Real64" Value="3.92578125"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>EnemyCrawl.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="269015357"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EnemyCrawl" ID="{89A6EBA4-A519-442D-BB0C-5E3EDF633D88}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemyFloat" ID="{0BF029CA-66CB-4967-8383-8B6BF3640F0B}" ShortID="321510766">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A68501D9-231A-4A2D-85BD-CF750F08E947}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="350"/>
+											<Property Name="Min" Type="Real64" Value="-550"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EnemyFloat" ID="{36B24FF4-65F3-4012-9337-CBD03F647822}">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="985.376"/>
+								<Property Name="LoopBegin" Type="Real64" Value="0.697635135135135"/>
+								<Property Name="LoopEnd" Type="Real64" Value="5.86486486486486"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>EnemyFloat.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="506588757"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EnemyFloat" ID="{36B24FF4-65F3-4012-9337-CBD03F647822}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemySlither" ID="{17806329-0554-4AB3-934C-648528E9E843}" ShortID="487968725">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7B11C327-22E3-48BE-85CE-F3F8F953426F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="300"/>
+											<Property Name="Min" Type="Real64" Value="-300"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="EnemySlither" ID="{CCA3ADDA-C8DD-4A60-B74F-E7EB4FAFAB18}">
+							<PropertyList>
+								<Property Name="CrossfadeDuration" Type="Real64" Value="967.014"/>
+								<Property Name="LoopBegin" Type="Real64" Value="1.48972413990949"/>
+								<Property Name="LoopEnd" Type="Real64" Value="10.6044833622537"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>EnemySlither.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="582923402"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="EnemySlither" ID="{CCA3ADDA-C8DD-4A60-B74F-E7EB4FAFAB18}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="KeyPickup" ID="{F977A3AE-9164-485A-897A-DB02E757F81A}" ShortID="738629054">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{15D2D174-3F73-48E3-B896-C5B10248871F}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="500"/>
+											<Property Name="Min" Type="Real64" Value="-500"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="KeyPickup" ID="{4A8F1E95-E98F-435C-B2B7-2FCBF5230D1D}">
+							<Language>SFX</Language>
+							<AudioFile>KeyPickup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="233395024"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="KeyPickup" ID="{4A8F1E95-E98F-435C-B2B7-2FCBF5230D1D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Select" ID="{8EC3E5F2-D8FD-4C5E-9E61-C091884BD8C5}" ShortID="366855801">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{188EE3F0-13E0-457F-82D4-335B8C8E4541}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="800"/>
+											<Property Name="Min" Type="Real64" Value="-800"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Select" ID="{26C991E9-4709-41C1-A568-8BE6DB80755B}">
+							<Language>SFX</Language>
+							<AudioFile>Select.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="323198155"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Select" ID="{26C991E9-4709-41C1-A568-8BE6DB80755B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="TESTSOUND" ID="{AE1FA3DE-1819-4AE5-86C2-06912114D7EC}" ShortID="325067879">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{D9E04C2D-7C06-4E06-920A-D7DCA1637F44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E48ECD93-65E7-4E78-8FF1-64B552FE2CC6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="TESTSOUND" ID="{92C62075-F822-4400-B43F-127AAE44DCFB}">
+							<Language>SFX</Language>
+							<AudioFile>TESTSOUND.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="613013392"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="TESTSOUND" ID="{92C62075-F822-4400-B43F-127AAE44DCFB}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -127,6 +127,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28324386e1d801b42bf180fd9e0b5d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorDetection
+  _startDoorOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 68af851367d014222ba770233b10a5f0, type: 2}
+  leftDoor: {fileID: 0}
+  rightDoor: {fileID: 0}
+  openSpeed: 2
 --- !u!54 &4867185117522796195
 Rigidbody:
   m_ObjectHideFlags: 0

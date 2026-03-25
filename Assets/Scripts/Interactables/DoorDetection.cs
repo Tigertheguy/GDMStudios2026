@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class DoorDetection : MonoBehaviour
 {
+    
+    [SerializeField] private AK.Wwise.Event _startDoorOpen;
+    
     public GameObject leftDoor;
     public GameObject rightDoor;
     public float openSpeed = 2f;
@@ -14,6 +17,12 @@ public class DoorDetection : MonoBehaviour
             Destroy(other.gameObject);
             StartCoroutine(OpenDoors());
             GetComponent<Collider>().enabled = false;
+            
+            Debug.Log("Door opened");
+
+            _startDoorOpen.Post(gameObject);
+
+            //key in door sound
         }
     }
 

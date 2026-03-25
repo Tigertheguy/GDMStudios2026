@@ -17,16 +17,26 @@ namespace AK
         static const AkUniqueID LOW_PASS_ON = 3512511369U;
         static const AkUniqueID PLAY_ACTIVATE = 956849933U;
         static const AkUniqueID PLAY_DAMAGETAKEN = 1423098094U;
+        static const AkUniqueID PLAY_DOOROPEN = 3197300806U;
+        static const AkUniqueID PLAY_ENEMYCRAWL = 2875824439U;
+        static const AkUniqueID PLAY_ENEMYFLOAT = 663905992U;
         static const AkUniqueID PLAY_ENEMYGROWL1 = 2679964538U;
         static const AkUniqueID PLAY_ENEMYGROWL2 = 2679964537U;
         static const AkUniqueID PLAY_ENEMYGROWL3 = 2679964536U;
         static const AkUniqueID PLAY_ENEMYGROWL4 = 2679964543U;
+        static const AkUniqueID PLAY_ENEMYSLITHER = 1606514805U;
         static const AkUniqueID PLAY_ENEMYWALK = 2634161841U;
         static const AkUniqueID PLAY_ENEMYWALKRANDOM = 16748364U;
         static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
+        static const AkUniqueID PLAY_KEYPICKUP = 885077343U;
         static const AkUniqueID PLAY_MUSICSANITY1LOOP = 3478577940U;
         static const AkUniqueID PLAY_PLAYERWALK = 2093119550U;
         static const AkUniqueID PLAY_PLAYERWALKRANDOM = 2127420471U;
+        static const AkUniqueID PLAY_SELECT = 1042987450U;
+        static const AkUniqueID PLAY_TESTSOUND = 2752533807U;
+        static const AkUniqueID STOP_ENEMYCRAWL = 3111075645U;
+        static const AkUniqueID STOP_ENEMYFLOAT = 3355807314U;
+        static const AkUniqueID STOP_ENEMYSLITHER = 4020967919U;
         static const AkUniqueID STOP_ENEMYWALKRANDOM = 950378054U;
         static const AkUniqueID STOP_PLAYERWALKRANDOM = 109684357U;
     } // namespace EVENTS

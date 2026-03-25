@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class KeySpin : MonoBehaviour
 { 
+    [SerializeField] public AK.Wwise.Event _startKeyPickup;
+
     public float spinSpeed = 50f;
 
     void Update()
@@ -23,6 +25,9 @@ public class KeySpin : MonoBehaviour
             
             // If you want the key to follow the player, add that here:
             // transform.SetParent(other.transform);
+
+            _startKeyPickup.Post(gameObject);
+            //add key audio
         }
     }
 }

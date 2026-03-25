@@ -94,15 +94,15 @@ MonoBehaviour:
   _startEnemyWalkRandomEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 7c5766bf1ef5449698b76988dba8f538, type: 2}
   _stopEnemyWalkRandomEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 73eccd5fae41d44e384c899df36afda8, type: 2}
   _startEnemyGrowl1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 69be1b262dc814e2292b67598bf2c6c7, type: 2}
   navAgent: {fileID: 5346679899647185048}
   currState: 0
   currTarget: {fileID: 0}

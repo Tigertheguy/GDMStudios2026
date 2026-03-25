@@ -163,6 +163,125 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_DoorOpen" ID="{A3A8B444-30B1-4BB3-9CE2-1726A9BEC894}">
+					<ChildrenList>
+						<Action Name="" ID="{198099E6-2318-4C85-95C3-4ED7B9B8AEB1}" ShortID="261547092">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DoorOpen" ID="{AF078095-F17B-4B6F-B9B0-4553F672412C}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyCrawl" ID="{1C8D5C36-40E1-49BA-B599-71864F937EE2}">
+					<ChildrenList>
+						<Action Name="" ID="{7A681BAA-54B1-40DF-9D48-330229EA7C5A}" ShortID="717820774">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyCrawl" ID="{17201120-DDD4-4A20-A5EA-98E4138CD7A4}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_EnemyCrawl" ID="{92F2241C-13BC-4ED8-BF63-9D7F05702162}">
+					<ChildrenList>
+						<Action Name="" ID="{B776A6D2-8863-4238-B9DA-6E673729F049}" ShortID="478683060">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyCrawl" ID="{17201120-DDD4-4A20-A5EA-98E4138CD7A4}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemyFloat" ID="{BAFFF116-7E72-4832-BFFF-204EDF3C4AC0}">
+					<ChildrenList>
+						<Action Name="" ID="{61C5A7C9-2BE0-43D6-A48F-AAA66CC79282}" ShortID="997158621">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyFloat" ID="{0BF029CA-66CB-4967-8383-8B6BF3640F0B}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_EnemyFloat" ID="{AFB4ABC4-1BC4-4664-B3C9-9F023C73AB12}">
+					<ChildrenList>
+						<Action Name="" ID="{B5CB1EC7-4B90-4ED4-8443-9C7987657A3B}" ShortID="336898445">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemyFloat" ID="{0BF029CA-66CB-4967-8383-8B6BF3640F0B}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_EnemySlither" ID="{0CEF0CEC-745E-436F-AC73-240ED1967165}">
+					<ChildrenList>
+						<Action Name="" ID="{0D65CA6F-260A-4822-AEFE-C553FF1634E8}" ShortID="273825975">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemySlither" ID="{17806329-0554-4AB3-934C-648528E9E843}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_EnemySlither" ID="{3DD7222E-D9D1-493E-B162-DB7885C826A1}">
+					<ChildrenList>
+						<Action Name="" ID="{4E39253A-70BC-40C6-AF93-09B0C783EB7D}" ShortID="609722608">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="EnemySlither" ID="{17806329-0554-4AB3-934C-648528E9E843}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Select" ID="{BF0F0FF0-0EE4-4AC3-A3E5-3FFE6409B029}">
+					<ChildrenList>
+						<Action Name="" ID="{219D4769-8139-4D47-8187-D8FF4BEB401F}" ShortID="258880547">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Select" ID="{8EC3E5F2-D8FD-4C5E-9E61-C091884BD8C5}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_KeyPickup" ID="{2CC02EC9-0FE8-4FC7-82F9-EC8F7AE8E2CE}">
+					<ChildrenList>
+						<Action Name="" ID="{61104DB6-0391-4368-AEC3-5A4583236399}" ShortID="1012502557">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="KeyPickup" ID="{F977A3AE-9164-485A-897A-DB02E757F81A}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_TESTSOUND" ID="{157E118C-D78A-49EB-AB3F-1862518BCFBF}">
+					<ChildrenList>
+						<Action Name="" ID="{395EBE9F-5D24-4FB8-A8BB-A09940EA694C}" ShortID="55878839">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TESTSOUND" ID="{AE1FA3DE-1819-4AE5-86C2-06912114D7EC}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

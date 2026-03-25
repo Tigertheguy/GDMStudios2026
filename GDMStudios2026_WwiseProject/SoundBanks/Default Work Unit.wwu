@@ -6,16 +6,31 @@
 				<SoundBank Name="Main_Soundbank" ID="{18E4ABCB-0880-4292-A583-08E6C011CADC}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_EnemyGrowl3" ID="{E75BE466-D192-4058-9451-B34283F6DE99}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyWalkRandom" ID="{4886CA5E-1854-40AC-9E33-EAB8D81AC18E}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EnemyGrowl1" ID="{3C234B95-5F7C-40BE-85B6-C8C618CF753F}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemySlither" ID="{0CEF0CEC-745E-436F-AC73-240ED1967165}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_EnemyWalkRandom" ID="{187326A3-22AA-43AA-B64C-C9C63DC9299B}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PlayerWalkRandom" ID="{33982E40-5869-43D9-97A6-6EAE19E95202}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EnemyGrowl4" ID="{325FD835-2A27-43DD-BDDF-F7F3C038285B}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EnemyWalk" ID="{68B6F269-C5AA-4652-AFE0-3C90826DF037}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_EnemyFloat" ID="{AFB4ABC4-1BC4-4664-B3C9-9F023C73AB12}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyFloat" ID="{BAFFF116-7E72-4832-BFFF-204EDF3C4AC0}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MusicSanity1LOOP" ID="{25167022-5956-4865-9E38-BBEB859F282D}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_EnemySlither" ID="{3DD7222E-D9D1-493E-B162-DB7885C826A1}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Heartbeat" ID="{51D6652D-F779-499C-887E-72647B31A364}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyCrawl" ID="{1C8D5C36-40E1-49BA-B599-71864F937EE2}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EnemyWalkRandom" ID="{EDCBB277-CFC1-49DF-A501-E45D934879B5}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TESTSOUND" ID="{157E118C-D78A-49EB-AB3F-1862518BCFBF}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Activate" ID="{12D97D81-28C0-4A61-945B-4822D065D632}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Select" ID="{BF0F0FF0-0EE4-4AC3-A3E5-3FFE6409B029}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_DoorOpen" ID="{A3A8B444-30B1-4BB3-9CE2-1726A9BEC894}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_PlayerWalkRandom" ID="{ECF2AFB7-B9A9-4C63-9AF9-7EDBAF2773F1}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_DamageTaken" ID="{5A4F06EB-EE6B-4CAF-946D-D3DD4EC0C31A}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PlayerWalk" ID="{9FB11C91-BDDD-4E4B-B544-76188E1EB751}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerWalkRandom" ID="{B015A33C-1F6C-4EAD-86D0-88CF8EE5E69D}" WorkUnitID="{81CCFC62-4B39-474C-B1F3-AB84CDA34794}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_EnemyGrowl2" ID="{CBD7C92E-7A2C-4ED2-9476-F43923E62C88}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_EnemyCrawl" ID="{92F2241C-13BC-4ED8-BF63-9D7F05702162}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_KeyPickup" ID="{2CC02EC9-0FE8-4FC7-82F9-EC8F7AE8E2CE}" WorkUnitID="{EAACE60E-D8E4-4FF5-A6CE-9D2AF1779ED1}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
