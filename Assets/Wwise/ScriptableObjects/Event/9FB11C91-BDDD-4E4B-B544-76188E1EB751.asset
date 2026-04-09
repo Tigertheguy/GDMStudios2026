@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_PlayerWalk
   id: 2093119550
   guid: 9FB11C91-BDDD-4E4B-B544-76188E1EB751
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

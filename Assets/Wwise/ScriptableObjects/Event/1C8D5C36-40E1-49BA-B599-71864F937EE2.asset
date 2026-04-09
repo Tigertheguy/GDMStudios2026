@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_EnemyCrawl
   id: 2875824439
   guid: 1C8D5C36-40E1-49BA-B599-71864F937EE2
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

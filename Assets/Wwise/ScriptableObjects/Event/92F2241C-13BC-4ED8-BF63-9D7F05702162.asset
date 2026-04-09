@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Stop_EnemyCrawl
   id: 3111075645
   guid: 92F2241C-13BC-4ED8-BF63-9D7F05702162
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

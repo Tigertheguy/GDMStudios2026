@@ -15,3 +15,4 @@ MonoBehaviour:
   objectName: Music_Soundbank
   id: 3589812408
   guid: A330D800-91EB-4674-991F-A98A5FD4AA10
+  bank: {fileID: 11400000, guid: f4a1a24f97ab64d60ae531a85b3900d3, type: 2}

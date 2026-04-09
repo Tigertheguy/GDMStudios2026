@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_PlayerWalkRandom
   id: 2127420471
   guid: 33982E40-5869-43D9-97A6-6EAE19E95202
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

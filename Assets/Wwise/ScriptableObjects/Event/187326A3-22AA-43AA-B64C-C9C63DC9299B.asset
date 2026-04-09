@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Stop_EnemyWalkRandom
   id: 950378054
   guid: 187326A3-22AA-43AA-B64C-C9C63DC9299B
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

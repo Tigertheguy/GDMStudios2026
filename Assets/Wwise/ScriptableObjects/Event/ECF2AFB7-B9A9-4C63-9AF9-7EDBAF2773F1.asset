@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Stop_PlayerWalkRandom
   id: 109684357
   guid: ECF2AFB7-B9A9-4C63-9AF9-7EDBAF2773F1
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

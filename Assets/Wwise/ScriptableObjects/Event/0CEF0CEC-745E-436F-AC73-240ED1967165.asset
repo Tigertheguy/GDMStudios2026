@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_EnemySlither
   id: 1606514805
   guid: 0CEF0CEC-745E-436F-AC73-240ED1967165
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

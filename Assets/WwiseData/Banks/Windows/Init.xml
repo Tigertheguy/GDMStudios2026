@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="154">
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="{E8C73C05-9AC5-A17E-EA11-491BBCB2A45E}">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" ObjectPath="\Audio Devices\Default Work Unit\No_Output" GUID="{1DAC1268-FF21-48C2-A3DC-9FF0FB311AD7}" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" ObjectPath="\Audio Devices\Default Work Unit\System" GUID="{D70F6BDF-B356-4FCB-B599-3EF2E6E26C00}" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="1555263990" Name="Sanity_Switch_Group" ObjectPath="\Switches\Default Work Unit\Sanity_Switch_Group" GUID="{39880F3E-9DC7-4BE4-8250-A99BFD302FA3}">
+					<Switches>
+						<Switch Id="1919464142" Name="Sanity_75" ObjectPath="\Switches\Default Work Unit\Sanity_Switch_Group\Sanity_75" GUID="{9AAC2765-DB0A-4B44-9B29-B42036AAA746}"/>
+						<Switch Id="1953019409" Name="Sanity_50" ObjectPath="\Switches\Default Work Unit\Sanity_Switch_Group\Sanity_50" GUID="{158503A5-705B-48DD-B5EE-82D1AD70FF7B}"/>
+						<Switch Id="1969796993" Name="Sanity_25" ObjectPath="\Switches\Default Work Unit\Sanity_Switch_Group\Sanity_25" GUID="{52CB0675-1D70-4C85-9C39-DC5407240475}"/>
+						<Switch Id="3923805783" Name="Sanity_100" ObjectPath="\Switches\Default Work Unit\Sanity_Switch_Group\Sanity_100" GUID="{550F3169-2C67-4AC7-ADE1-1DF723EF8500}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{168D62DD-2CA6-84E8-38CD-6CB6590BDF22}</FileHash>
+</SoundBanksInfo>

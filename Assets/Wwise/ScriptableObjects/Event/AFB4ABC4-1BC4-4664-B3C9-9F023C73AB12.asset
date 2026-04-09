@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Stop_EnemyFloat
   id: 3355807314
   guid: AFB4ABC4-1BC4-4664-B3C9-9F023C73AB12
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

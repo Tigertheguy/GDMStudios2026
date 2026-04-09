@@ -4,6 +4,7 @@
 		<Project Name="GDMStudios2026_WwiseProject" ID="{DA1D9D8C-CD6D-4E33-BDB0-A4114E086B91}">
 			<Platforms>
 				<Platform Name="Mac" ReferencePlatform="Mac" ID="{0AD4C892-B6A5-4369-B8B0-7064E4CA9BA4}" />
+				<Platform Name="Web" ReferencePlatform="Web" ID="{BB86FD48-DFFF-4411-856B-A4811BD15F65}" />
 				<Platform Name="Windows" ReferencePlatform="Windows" ID="{29648913-3D93-4868-8118-B6DCBFC4403C}" />
 			</Platforms>
 			<LanguageList>
@@ -16,45 +17,66 @@
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
+						<Value Platform="Web">GeneratedSoundBanks\Web</Value>
 						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
 					</ValueList>
 				</Property>
+				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
+					<ValueList>
+						<Value Platform="Mac">256</Value>
+						<Value Platform="Web">256</Value>
+						<Value Platform="Windows">256</Value>
+					</ValueList>
+				</Property>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" />
-				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
+				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="../Assets/WwiseData/Banks/" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">../Assets/WwiseData/Banks/Mac/</Value>
+						<Value Platform="Web">../Assets/WwiseData/Banks/Web/</Value>
+						<Value Platform="Windows">../Assets/WwiseData/Banks/Windows/</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
 					<ValueList>
 						<Value Platform="Mac"></Value>
+						<Value Platform="Web"></Value>
 						<Value Platform="Windows"></Value>
+					</ValueList>
+				</Property>
+				<Property Name="VolumeThreshold" Type="Real64">
+					<ValueList>
+						<Value Platform="Mac">-80</Value>
+						<Value Platform="Web">-80</Value>
+						<Value Platform="Windows">-80</Value>
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2024.1.4|Build=8780|VersionName=v2024.1.4|Config=Release" />
@@ -885,7 +907,7 @@
 						</Property>
 						<Property Name="SoundBankPaths" Type="string">
 							<ValueList>
-								<Value></Value>
+								<Value>../Assets/WwiseData/Banks/</Value>
 							</ValueList>
 						</Property>
 						<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
@@ -6024,7 +6046,7 @@
 						</Property>
 						<Property Name="SoundBankPaths" Type="string">
 							<ValueList>
-								<Value></Value>
+								<Value>../Assets/WwiseData/Banks/</Value>
 							</ValueList>
 						</Property>
 						<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">

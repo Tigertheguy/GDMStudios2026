@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_MusicSanity1LOOP
   id: 3478577940
   guid: 25167022-5956-4865-9E38-BBEB859F282D
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_EnemyGrowl1
   id: 2679964538
   guid: 3C234B95-5F7C-40BE-85B6-C8C618CF753F
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

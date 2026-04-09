@@ -1,0 +1,160 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "3589812408",
+    "Type": "User",
+    "GUID": "{A330D800-91EB-4674-991F-A98A5FD4AA10}",
+    "Language": "SFX",
+    "Hash": "{E40A9798-26D8-C3CF-43E2-0DDBF4FF2004}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music_Soundbank",
+    "ShortName": "Music_Soundbank",
+    "Path": "Music_Soundbank.bnk",
+    "Media": [
+     {
+      "Id": "100107031",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MusicSanity4.wav",
+      "CachePath": "18/{18663195-D005-27CA-7BA2-B8D9F56BA431}.wem"
+     },
+     {
+      "Id": "359482999",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MusicSanity2.wav",
+      "CachePath": "6D/{6DC448BF-FEDB-D284-0C0B-7B21A24FA17D}.wem"
+     },
+     {
+      "Id": "458661342",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MusicSanity3.wav",
+      "CachePath": "CF/{CF476571-2666-B0C7-8367-BC06124FCA9F}.wem"
+     },
+     {
+      "Id": "694139509",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "MusicSanity1.wav",
+      "CachePath": "CF/{CFBAE895-0867-B984-3147-AD6BD15F6738}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "367131765",
+      "Name": "Low_Pass_Off",
+      "ObjectPath": "\\Events\\Music\\Low_Pass_Off",
+      "GUID": "{B8D0AA1C-CF70-4FCD-912B-8111AD8BEDC1}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "100107031"
+       },
+       {
+        "Id": "359482999"
+       },
+       {
+        "Id": "458661342"
+       },
+       {
+        "Id": "694139509"
+       }
+      ]
+     },
+     {
+      "Id": "3512511369",
+      "Name": "Low_Pass_On",
+      "ObjectPath": "\\Events\\Music\\Low_Pass_On",
+      "GUID": "{8411629B-8D05-4745-B927-FCDB938AB751}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "MediaRefs": [
+       {
+        "Id": "100107031"
+       },
+       {
+        "Id": "359482999"
+       },
+       {
+        "Id": "458661342"
+       },
+       {
+        "Id": "694139509"
+       }
+      ]
+     },
+     {
+      "Id": "3478577940",
+      "Name": "Play_MusicSanity1LOOP",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MusicSanity1LOOP",
+      "GUID": "{25167022-5956-4865-9E38-BBEB859F282D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "100107031"
+       },
+       {
+        "Id": "359482999"
+       },
+       {
+        "Id": "458661342"
+       },
+       {
+        "Id": "694139509"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1555263990",
+      "Name": "Sanity_Switch_Group",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group",
+      "GUID": "{39880F3E-9DC7-4BE4-8250-A99BFD302FA3}",
+      "Switches": [
+       {
+        "Id": "1919464142",
+        "Name": "Sanity_75",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group\\Sanity_75",
+        "GUID": "{9AAC2765-DB0A-4B44-9B29-B42036AAA746}"
+       },
+       {
+        "Id": "1953019409",
+        "Name": "Sanity_50",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group\\Sanity_50",
+        "GUID": "{158503A5-705B-48DD-B5EE-82D1AD70FF7B}"
+       },
+       {
+        "Id": "1969796993",
+        "Name": "Sanity_25",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group\\Sanity_25",
+        "GUID": "{52CB0675-1D70-4C85-9C39-DC5407240475}"
+       },
+       {
+        "Id": "3923805783",
+        "Name": "Sanity_100",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Sanity_Switch_Group\\Sanity_100",
+        "GUID": "{550F3169-2C67-4AC7-ADE1-1DF723EF8500}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E86A8C82-609B-1A73-4B1C-29299313F5DD}"
+ }
+}

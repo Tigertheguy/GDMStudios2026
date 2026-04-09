@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_EnemyFloat
   id: 663905992
   guid: BAFFF116-7E72-4832-BFFF-204EDF3C4AC0
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

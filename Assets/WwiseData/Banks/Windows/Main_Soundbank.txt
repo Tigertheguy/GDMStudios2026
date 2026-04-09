@@ -1,0 +1,48 @@
+Event	ID	Name			Wwise Object Path	Notes
+	16748364	Play_EnemyWalkRandom			\Default Work Unit\Play_EnemyWalkRandom	
+	109684357	Stop_PlayerWalkRandom			\Default Work Unit\Stop_PlayerWalkRandom	
+	663905992	Play_EnemyFloat			\Default Work Unit\Play_EnemyFloat	
+	885077343	Play_KeyPickup			\Default Work Unit\Play_KeyPickup	
+	950378054	Stop_EnemyWalkRandom			\Default Work Unit\Stop_EnemyWalkRandom	
+	956849933	Play_Activate			\Default Work Unit\Play_Activate	
+	1042987450	Play_Select			\Default Work Unit\Play_Select	
+	1423098094	Play_DamageTaken			\Default Work Unit\Play_DamageTaken	
+	1606514805	Play_EnemySlither			\Default Work Unit\Play_EnemySlither	
+	2093119550	Play_PlayerWalk			\Default Work Unit\Play_PlayerWalk	
+	2127420471	Play_PlayerWalkRandom			\Default Work Unit\Play_PlayerWalkRandom	
+	2634161841	Play_EnemyWalk			\Default Work Unit\Play_EnemyWalk	
+	2679964536	Play_EnemyGrowl3			\Default Work Unit\Play_EnemyGrowl3	
+	2679964537	Play_EnemyGrowl2			\Default Work Unit\Play_EnemyGrowl2	
+	2679964538	Play_EnemyGrowl1			\Default Work Unit\Play_EnemyGrowl1	
+	2679964543	Play_EnemyGrowl4			\Default Work Unit\Play_EnemyGrowl4	
+	2752533807	Play_TESTSOUND			\Default Work Unit\Play_TESTSOUND	
+	2875824439	Play_EnemyCrawl			\Default Work Unit\Play_EnemyCrawl	
+	3111075645	Stop_EnemyCrawl			\Default Work Unit\Stop_EnemyCrawl	
+	3197300806	Play_DoorOpen			\Default Work Unit\Play_DoorOpen	
+	3355807314	Stop_EnemyFloat			\Default Work Unit\Stop_EnemyFloat	
+	3478577940	Play_MusicSanity1LOOP			\Default Work Unit\Play_MusicSanity1LOOP	
+	3765695918	Play_Heartbeat			\Default Work Unit\Play_Heartbeat	
+	4020967919	Stop_EnemySlither			\Default Work Unit\Stop_EnemySlither	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	100107031	MusicSanity1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\18\{18663195-D005-27CA-7BA2-B8D9F56BA431}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSanity1LOOP\MusicSanity1\MusicSanity1		9984160
+	120433409	EnemyWalk	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\21\{21365F4C-B9F2-5D26-D39F-CF190928BF57}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyWalkRandom\EnemyWalk		264160
+	155935737	EnemyGrowl1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\A5\{A5830382-599B-59BC-7E0B-89950BEB2F57}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyGrowl1		912160
+	188146421	Heartbeat	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\85\{85545F4A-E8BB-5990-6962-B44EEBCD4210}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heartbeat		1016160
+	233395024	KeyPickup	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\74\{74706143-64FE-B8DC-A801-CCA723714CB2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\KeyPickup		34360
+	269015357	EnemyCrawl	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\AC\{AC24AC6A-AE96-EA63-1E41-D8DCAC3D91FD}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyCrawl		804240
+	323198155	Select	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\89\{89B75269-27D8-A178-25B2-5BC1966E60A7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Select		14908
+	359482999	MusicSanity1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\6D\{6DC448BF-FEDB-D284-0C0B-7B21A24FA17D}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSanity1LOOP\MusicSanity1\MusicSanity1		9984160
+	438782125	Activate	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\87\{87D22FB9-0CAD-0812-4A0E-E5C96A5BBAFB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Activate		48160
+	458661342	MusicSanity1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\CF\{CF476571-2666-B0C7-8367-BC06124FCA9F}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSanity1LOOP\MusicSanity1\MusicSanity1		9984160
+	506588757	EnemyFloat	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\67\{67C545FE-B137-75AA-6778-686C70723CB7}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyFloat		1344240
+	582923402	EnemySlither	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\73\{73324319-5753-7177-715C-123960904B54}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemySlither		2228240
+	613013392	TESTSOUND	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\BA\{BAD43432-629B-5BE8-C921-5A9A1489E641}.wem		\Actor-Mixer Hierarchy\Default Work Unit\TESTSOUND		65360
+	614609850	DoorOpen	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\BF\{BF58F6B8-91A1-845B-2151-88CB3FB9247F}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen		576260
+	694139509	MusicSanity1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\CF\{CFBAE895-0867-B984-3147-AD6BD15F6738}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSanity1LOOP\MusicSanity1\MusicSanity1		9984160
+	769779975	DamageTaken	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\82\{824491A6-B24E-8195-A484-55152656F678}.wem		\Actor-Mixer Hierarchy\Default Work Unit\DamageTaken		508160
+	832754357	EnemyGrowl4	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\94\{94301AAE-13E6-45E2-DA80-5E6C9E9B5D47}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyGrowl4		504160
+	878601726	EnemyGrowl3	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\0A\{0AEE907E-9D0D-7138-61D7-86549F081841}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyGrowl3		1072160
+	892983716	EnemyGrowl2	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\36\{3626F529-E674-1B52-59E3-AE3A8DAAE259}.wem		\Actor-Mixer Hierarchy\Default Work Unit\EnemyGrowl2		788160
+	990169513	PlayerWalk	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\66\{66626273-DF9A-1EBC-B5F2-E4C64BE56979}.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerWalkRandom\PlayerWalk		88160
+

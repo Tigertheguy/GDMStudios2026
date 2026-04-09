@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_EnemyWalkRandom
   id: 16748364
   guid: 4886CA5E-1854-40AC-9E33-EAB8D81AC18E
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

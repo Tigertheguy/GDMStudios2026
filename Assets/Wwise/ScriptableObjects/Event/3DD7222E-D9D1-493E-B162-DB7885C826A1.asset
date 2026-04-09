@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Stop_EnemySlither
   id: 4020967919
   guid: 3DD7222E-D9D1-493E-B162-DB7885C826A1
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

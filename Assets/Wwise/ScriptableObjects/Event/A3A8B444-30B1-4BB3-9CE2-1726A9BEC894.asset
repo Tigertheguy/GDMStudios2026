@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Play_DoorOpen
   id: 3197300806
   guid: A3A8B444-30B1-4BB3-9CE2-1726A9BEC894
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

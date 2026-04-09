@@ -15,4 +15,5 @@ MonoBehaviour:
   objectName: Low_Pass_Off
   id: 367131765
   guid: B8D0AA1C-CF70-4FCD-912B-8111AD8BEDC1
+  AutoBank: {fileID: 0}
   IsInUserDefinedSoundBank: 1

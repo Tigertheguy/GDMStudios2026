@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	367131765	Low_Pass_Off			\Music\Low_Pass_Off	
+	3478577940	Play_MusicSanity1LOOP			\Default Work Unit\Play_MusicSanity1LOOP	
+	3512511369	Low_Pass_On			\Music\Low_Pass_On	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	100107031	MusicSanity1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\18\{18663195-D005-27CA-7BA2-B8D9F56BA431}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSanity1LOOP\MusicSanity1\MusicSanity1		9984160
+	359482999	MusicSanity1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\6D\{6DC448BF-FEDB-D284-0C0B-7B21A24FA17D}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSanity1LOOP\MusicSanity1\MusicSanity1		9984160
+	458661342	MusicSanity1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\CF\{CF476571-2666-B0C7-8367-BC06124FCA9F}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSanity1LOOP\MusicSanity1\MusicSanity1		9984160
+	694139509	MusicSanity1	Z:\Volumes\Samsung PSSD T7 Media\GameDev McGill\GDMStudios2026\GDMStudios2026_WwiseProject\.cache\CF\{CFBAE895-0867-B984-3147-AD6BD15F6738}.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSanity1LOOP\MusicSanity1\MusicSanity1		9984160
+
